@@ -61,7 +61,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -71,11 +71,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -304,7 +304,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "sending_queue": {
@@ -333,7 +333,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -343,11 +343,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -568,7 +568,7 @@
               "default": 1024
             },
             "maxbatchinterval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "spaneventsenabled": {
@@ -586,7 +586,7 @@
               "description": "Endpoint specifies host and port to send metrics in the Carbon plaintext\nformat. The default value is defined by the DefaultEndpoint constant."
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s",
               "description": "Timeout is the maximum duration allowed to connecting and sending the\ndata to the Carbon/Graphite backend.\nThe default value is defined by the DefaultSendTimeout constant."
             }
@@ -639,7 +639,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "retry_on_failure": {
@@ -650,7 +650,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -660,11 +660,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -757,7 +757,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -767,17 +767,17 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "domain": {
@@ -832,7 +832,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -917,7 +917,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -1002,7 +1002,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -1090,7 +1090,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -1179,7 +1179,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -1244,7 +1244,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "15s"
             },
             "sending_queue": {
@@ -1273,7 +1273,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -1283,11 +1283,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -1493,24 +1493,24 @@
               "type": "object",
               "properties": {
                 "max_lifetime": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "group_by": {},
                 "retry_initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "retry_max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "retry_max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 },
                 "retry_shutdown_timeout": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 }
               }
@@ -1560,7 +1560,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -1570,11 +1570,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -1601,7 +1601,7 @@
               "type": "object",
               "properties": {
                 "timeout": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 }
               }
@@ -1651,7 +1651,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -1674,7 +1674,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "headers": {
               "type": "object",
@@ -1718,7 +1718,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -1728,11 +1728,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -1867,7 +1867,7 @@
               "description": "WriteBufferSize for HTTP client. See http.Transport.WriteBufferSize."
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "1m30s",
               "description": "Timeout configures the HTTP request timeout."
             },
@@ -1914,7 +1914,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -1939,7 +1939,7 @@
                   "description": "OnStart, if set, instructs the exporter to look for available Elasticsearch\nnodes the first time the exporter connects to the cluster."
                 },
                 "interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "Interval instructs the exporter to renew the list of Elasticsearch URLs\nwith the given interval. URLs will not be updated if Interval is <=0."
                 }
               },
@@ -1959,12 +1959,12 @@
                   "description": "MaxRequests configures how often an HTTP request is retried before it is assumed to be failed."
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "100ms",
                   "description": "InitialInterval configures the initial waiting time if a request failed."
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "1m0s",
                   "description": "MaxInterval configures the max waiting time if consecutive requests failed."
                 }
@@ -1979,7 +1979,7 @@
                   "description": "Bytes sets the send buffer flushing limit."
                 },
                 "interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "Interval configures the max age of a document in the send buffer."
                 }
               },
@@ -2061,7 +2061,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -2085,7 +2085,7 @@
               "default": 524288
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s"
             },
             "headers": {
@@ -2130,7 +2130,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -2140,11 +2140,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -2206,7 +2206,7 @@
               "description": "Compression Codec used to export telemetry data\nSupported compression algorithms:`zstd`"
             },
             "flush_interval": {
-              "type": "integer",
+              "type": "string",
               "description": "FlushInterval is the duration between flushes.\nSee time.ParseDuration for valid values."
             }
           }
@@ -2398,7 +2398,7 @@
               "default": false
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "12s"
             },
             "sending_queue": {
@@ -2427,7 +2427,7 @@
                   "default": false
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -2437,11 +2437,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -2452,7 +2452,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "12s"
             },
             "sending_queue": {
@@ -2479,7 +2479,7 @@
                   "default": false
                 },
                 "initial_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "randomization_factor": {
                   "type": "number"
@@ -2488,10 +2488,10 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "max_elapsed_time": {
-                  "type": "integer"
+                  "type": "string"
                 }
               }
             },
@@ -2524,7 +2524,7 @@
                   "description": "Behavior of the watermark. Currently, only  of the message (none, earliest and current, current being the default)\nwill set the timestamp on pubsub based on timestamps of the events inside the message"
                 },
                 "allowed_drift": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "Indication on how much the timestamp can drift from the current time, the timestamp will be capped to the allowed\nmaximum. A duration of 0 is the same as maximum duration"
                 }
               },
@@ -2592,7 +2592,7 @@
               }
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "12s"
             },
             "sending_queue": {
@@ -2621,7 +2621,7 @@
                   "default": false
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -2631,11 +2631,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -2685,7 +2685,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -2708,7 +2708,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "headers": {
@@ -2753,7 +2753,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -2763,11 +2763,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -2880,7 +2880,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -2904,7 +2904,7 @@
               "default": 524288
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s"
             },
             "headers": {
@@ -2929,7 +2929,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "sending_queue": {
@@ -2958,7 +2958,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -2968,11 +2968,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -3021,7 +3021,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -3105,7 +3105,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -3128,7 +3128,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "headers": {
@@ -3153,7 +3153,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "sending_queue": {
@@ -3182,7 +3182,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -3192,11 +3192,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -3236,7 +3236,7 @@
                       "description": "The total number of times to retry a metadata request when the\ncluster is in the middle of a leader election or at startup (default 3)."
                     },
                     "backoff": {
-                      "type": "integer",
+                      "type": "string",
                       "default": "250ms",
                       "description": "How long to wait for leader election to occur before retrying\n(default 250ms). Similar to the JVM's `retry.backoff.ms`."
                     }
@@ -3298,7 +3298,7 @@
                   "type": "object",
                   "properties": {
                     "timeout": {
-                      "type": "integer",
+                      "type": "string",
                       "default": "5s"
                     },
                     "sending_queue": {
@@ -3327,7 +3327,7 @@
                           "default": true
                         },
                         "initial_interval": {
-                          "type": "integer",
+                          "type": "string",
                           "default": "5s"
                         },
                         "randomization_factor": {
@@ -3337,11 +3337,11 @@
                           "type": "number"
                         },
                         "max_interval": {
-                          "type": "integer",
+                          "type": "string",
                           "default": "30s"
                         },
                         "max_elapsed_time": {
-                          "type": "integer",
+                          "type": "string",
                           "default": "5m0s"
                         }
                       }
@@ -3390,7 +3390,7 @@
                           "default": ""
                         },
                         "reload_interval": {
-                          "type": "integer"
+                          "type": "string"
                         },
                         "insecure": {
                           "type": "boolean",
@@ -3515,7 +3515,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -3538,7 +3538,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "headers": {
               "type": "object",
@@ -3582,7 +3582,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -3592,11 +3592,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -3671,7 +3671,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -3695,7 +3695,7 @@
               "default": 524288
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s"
             },
             "headers": {
@@ -3740,7 +3740,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -3750,11 +3750,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -3825,7 +3825,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -3849,7 +3849,7 @@
               "default": 524288
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s"
             },
             "headers": {
@@ -3894,7 +3894,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -3904,11 +3904,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -3964,7 +3964,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -3987,7 +3987,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "headers": {
@@ -4032,7 +4032,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -4042,11 +4042,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -4110,7 +4110,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -4173,7 +4173,7 @@
                   "default": false
                 },
                 "initial_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "randomization_factor": {
                   "type": "number"
@@ -4182,10 +4182,10 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "max_elapsed_time": {
-                  "type": "integer"
+                  "type": "string"
                 }
               }
             },
@@ -4200,7 +4200,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "sending_queue": {
@@ -4229,7 +4229,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -4239,11 +4239,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -4292,7 +4292,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -4376,7 +4376,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -4400,7 +4400,7 @@
               "default": 524288
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s"
             },
             "headers": {
@@ -4445,7 +4445,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -4455,11 +4455,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -4528,7 +4528,7 @@
               "description": "SendTimestamps will send the underlying scrape timestamp with the export"
             },
             "metric_expiration": {
-              "type": "integer",
+              "type": "string",
               "default": "5m0s",
               "description": "MetricExpiration defines how long metrics are kept without updates"
             },
@@ -4559,7 +4559,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "retry_on_failure": {
@@ -4570,7 +4570,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "50ms"
                 },
                 "randomization_factor": {
@@ -4580,11 +4580,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "200ms"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "1m0s"
                 }
               }
@@ -4662,7 +4662,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -4730,7 +4730,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "sending_queue": {
@@ -4759,7 +4759,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -4769,11 +4769,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -4817,10 +4817,10 @@
                   "default": ""
                 },
                 "partitions_auto_discovery_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "batching_max_publish_delay": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "batching_max_messages": {
                   "default": 0
@@ -4859,11 +4859,11 @@
               }
             },
             "operation_timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s"
             },
             "connection_timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "map_connections_per_broker": {
@@ -4914,7 +4914,7 @@
               "description": "AccessTokenPassthrough indicates whether to associate datapoints with an organization access token received in request."
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "sending_queue": {
@@ -4943,7 +4943,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -4953,11 +4953,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -5013,7 +5013,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -5023,11 +5023,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -5072,7 +5072,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -5095,7 +5095,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "headers": {
@@ -5165,7 +5165,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -5223,7 +5223,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -5258,7 +5258,7 @@
                   "default": 10000
                 },
                 "send_delay": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "10s"
                 },
                 "max_idle_conns": {
@@ -5274,7 +5274,7 @@
                   "default": 20
                 },
                 "idle_conn_timeout": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 }
               },
@@ -5372,7 +5372,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -5437,7 +5437,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -5447,17 +5447,17 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "num_streams": {
@@ -5510,7 +5510,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -5533,7 +5533,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "headers": {
@@ -5578,7 +5578,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -5588,11 +5588,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -5728,7 +5728,7 @@
               "type": "object",
               "properties": {
                 "interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "Interval represents the time interval for the heartbeat interval. If nothing or 0 is set,\nheartbeat is not enabled.\nA heartbeat is an event sent to _internal index with metadata for the current collector/host."
                 },
                 "startup": {
@@ -5809,7 +5809,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -5832,7 +5832,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "headers": {
@@ -5877,7 +5877,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -5887,11 +5887,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -5975,7 +5975,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -5985,11 +5985,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -6037,7 +6037,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -6060,7 +6060,7 @@
                   "type": "integer"
                 },
                 "timeout": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "headers": {
                   "type": "object",
@@ -6124,7 +6124,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -6147,7 +6147,7 @@
                   "type": "integer"
                 },
                 "timeout": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "headers": {
                   "type": "object",
@@ -6237,7 +6237,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -6247,11 +6247,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -6296,7 +6296,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -6320,7 +6320,7 @@
               "default": 524288
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "headers": {
@@ -6364,7 +6364,7 @@
               "default": ""
             },
             "ttl": {
-              "type": "integer"
+              "type": "string"
             },
             "issuer": {
               "type": "string",
@@ -6425,7 +6425,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -6517,7 +6517,7 @@
               "description": "The URL of the docker server.  Default is \"unix:///var/run/docker.sock\""
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s",
               "description": "The maximum amount of time to wait for docker API responses.  Default is 5s"
             },
@@ -6540,7 +6540,7 @@
               "description": "If true, the observer will ignore discovered container endpoints that are not bound\nto host ports.  This is useful if containers exist that are not accessible\nto an instance of the agent running outside of the docker network stack."
             },
             "cache_sync_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1h0m0s",
               "description": "The time to wait before resyncing the list of containers the observer maintains\nthrough the docker event listener example: cache_sync_interval: \"20m\"\nDefault: \"60m\""
             },
@@ -6593,7 +6593,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -6616,7 +6616,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "headers": {
               "type": "object",
@@ -6635,7 +6635,7 @@
             "max_conns_per_host": {},
             "idle_conn_timeout": {},
             "refresh_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "30s",
               "description": "RefreshInterval determines the frequency at which the observer\nneeds to poll for collecting new information about task containers."
             },
@@ -6652,7 +6652,7 @@
               "default": "/var/lib/otelcol/file_storage"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "compaction": {
@@ -6724,7 +6724,7 @@
           "type": "object",
           "properties": {
             "refresh_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s",
               "description": "RefreshInterval determines how frequency at which the observer\nneeds to poll for collecting information about new processes."
             }
@@ -6802,7 +6802,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -6825,7 +6825,7 @@
                   "type": "integer"
                 },
                 "timeout": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "10s"
                 },
                 "headers": {
@@ -6866,7 +6866,7 @@
                   "description": "File specifies a local file as the strategies source"
                 },
                 "reload_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "ReloadInterval determines the periodicity to refresh the strategies"
                 }
               },
@@ -6974,7 +6974,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -6992,7 +6992,7 @@
               "description": "TLSSetting struct exposes TLS client configuration for the underneath client to authorization server."
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "description": "Timeout parameter configures `http.Client.Timeout` for the underneath client to authorization\nserver while fetching and refreshing tokens."
             }
           }
@@ -7119,7 +7119,7 @@
           "type": "object",
           "properties": {
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "200ms"
             },
             "send_batch_size": {
@@ -7138,7 +7138,7 @@
           "type": "object",
           "properties": {
             "max_staleness": {
-              "type": "integer",
+              "type": "string",
               "description": "MaxStaleness is the total time a state entry will live past the time it was last seen. Set to 0 to retain state indefinitely."
             },
             "initial_value": {
@@ -7293,7 +7293,7 @@
               "description": "NumWorkers is a number of workers processing event queue.\nDefault: 1."
             },
             "wait_duration": {
-              "type": "integer",
+              "type": "string",
               "default": "1s",
               "description": "WaitDuration tells the processor to wait for the specified duration for the trace to be complete.\nDefault: 1s."
             },
@@ -7382,7 +7382,7 @@
           "type": "object",
           "properties": {
             "check_interval": {
-              "type": "integer"
+              "type": "string"
             },
             "limit_mib": {
               "default": 0
@@ -8603,7 +8603,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -8709,7 +8709,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -8732,7 +8732,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s"
             },
             "headers": {
@@ -8810,7 +8810,7 @@
                   "description": "MaxItems is the maximum number of items to keep in the store."
                 },
                 "ttl": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "2s",
                   "description": "TTL is the time to live for items in the store."
                 }
@@ -8818,12 +8818,12 @@
               "description": "Store contains the config for the in-memory store used to find requests between services by pairing spans."
             },
             "cache_loop": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s",
               "description": "CacheLoop is the time to cleans the cache periodically."
             },
             "store_expiration_loop": {
-              "type": "integer",
+              "type": "string",
               "default": "2s",
               "description": "CacheLoop is the time to expire old entries from the store periodically."
             },
@@ -8887,7 +8887,7 @@
               "default": "AGGREGATION_TEMPORALITY_CUMULATIVE"
             },
             "metrics_flush_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "15s",
               "description": "MetricsEmitInterval is the time period between when metrics are flushed or emitted to the configured MetricsExporter."
             },
@@ -8902,7 +8902,7 @@
           "type": "object",
           "properties": {
             "decision_wait": {
-              "type": "integer",
+              "type": "string",
               "default": "30s",
               "description": "DecisionWait is the desired wait time from the arrival of the first span of\ntrace until the decision about sampling it or not is evaluated."
             },
@@ -8943,15 +8943,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "metrics": {
               "type": "object",
@@ -9145,15 +9145,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "20s"
             },
             "endpoint": {
@@ -9355,15 +9355,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "endpoint": {
@@ -9406,7 +9406,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -9602,15 +9602,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "metrics": {
               "type": "object",
@@ -10354,7 +10354,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -10419,7 +10419,7 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s",
               "description": "CollectionInterval is the interval at which metrics should be collected. The default is 60 second."
             },
@@ -10449,7 +10449,7 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "20s",
               "description": "CollectionInterval is the interval at which metrics should be collected"
             }
@@ -10575,15 +10575,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "resource_attributes": {
               "type": "object",
@@ -10649,14 +10649,14 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer"
+              "type": "string"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "endpoint": {
@@ -10699,7 +10699,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -11111,7 +11111,7 @@
               "default": "tcp"
             },
             "tcp_idle_timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s",
               "description": "TCPIdleTimeout is the timout for idle TCP connections, it is ignored\nif transport being used is UDP."
             },
@@ -11124,15 +11124,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s",
               "description": "Timeout controls the max time allowed to read data from chronyd"
             },
@@ -11265,7 +11265,7 @@
                       "default": ""
                     },
                     "reload_interval": {
-                      "type": "integer"
+                      "type": "string"
                     },
                     "insecure": {
                       "type": "boolean",
@@ -11288,7 +11288,7 @@
                   "type": "integer"
                 },
                 "timeout": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "headers": {
                   "type": "object",
@@ -11350,7 +11350,7 @@
               "default": "localhost:8081"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s"
             },
             "attributes_prefix": {
@@ -11367,15 +11367,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "endpoint": {
@@ -11418,7 +11418,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -11592,7 +11592,7 @@
               }
             },
             "read_timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s",
               "description": "ReadTimeout of the http server"
             }
@@ -11602,15 +11602,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s",
               "description": "The maximum amount of time to wait for docker API responses.  Default is 5s"
             },
@@ -12398,15 +12398,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "endpoint": {
@@ -12449,7 +12449,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -13476,15 +13476,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "3s"
             },
             "endpoint": {
@@ -13527,7 +13527,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -13886,7 +13886,7 @@
               "default": false
             },
             "poll_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "200ms"
             },
             "start_at": {
@@ -13917,7 +13917,7 @@
               "default": "utf-8"
             },
             "force_flush_period": {
-              "type": "integer",
+              "type": "string",
               "default": "500ms"
             },
             "multiline": {
@@ -13956,17 +13956,17 @@
                   "description": "Enabled indicates whether to not retry sending logs in case of receiving a retryable error from a downstream\nconsumer. Default is false."
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "1s",
                   "description": "InitialInterval the time to wait after the first failure before retrying. Default value is 1 second."
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s",
                   "description": "MaxInterval is the upper bound on backoff interval. Once this value is reached the delay between\nconsecutive retries will always be `MaxInterval`. Default value is 30 seconds."
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s",
                   "description": "MaxElapsedTime is the maximum amount of time (including retries) spent trying to send a logs batch to\na downstream consumer. Once this value is reached, the data is discarded. It never stops if MaxElapsedTime == 0.\nDefault value is 5 minutes."
                 }
@@ -13979,15 +13979,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "endpoint": {
@@ -14030,7 +14030,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -14466,7 +14466,7 @@
               "description": "Only has effect if Endpoint is not \"\""
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "subscription": {
               "type": "string",
@@ -14494,15 +14494,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "top_metrics_query_max_rows": {
               "type": "integer",
@@ -14569,7 +14569,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -14592,7 +14592,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "headers": {
               "type": "object",
@@ -14611,11 +14611,11 @@
             "max_conns_per_host": {},
             "idle_conn_timeout": {},
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "metrics": {
@@ -14986,15 +14986,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "root_path": {
               "type": "string",
@@ -15007,15 +15007,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "metrics": {
               "type": "object",
@@ -15060,15 +15060,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "metrics": {
               "type": "object",
@@ -15290,7 +15290,7 @@
               "description": "The target system for the metric gatherer whose built in groovy script to run."
             },
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s",
               "description": "The duration in between groovy script invocations and metric exports (10 seconds by default).\nWill be converted to milliseconds."
             },
@@ -15303,7 +15303,7 @@
                   "description": "The OTLP Receiver endpoint to send metrics to (\"0.0.0.0:<random open port>\" by default)."
                 },
                 "timeout": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "headers": {
@@ -15399,15 +15399,15 @@
                   "description": "Enabled indicates whether to not retry sending logs in case of receiving a retryable error from a downstream\nconsumer. Default is false."
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "InitialInterval the time to wait after the first failure before retrying. Default value is 1 second."
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "MaxInterval is the upper bound on backoff interval. Once this value is reached the delay between\nconsecutive retries will always be `MaxInterval`. Default value is 30 seconds."
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "MaxElapsedTime is the maximum amount of time (including retries) spent trying to send a logs batch to\na downstream consumer. Once this value is reached, the data is discarded. It never stops if MaxElapsedTime == 0.\nDefault value is 5 minutes."
                 }
               },
@@ -15424,7 +15424,7 @@
               "description": "How to authenticate to the K8s API server.  This can be one of `none`\n(for no auth), `serviceAccount` (to use the standard service account\ntoken provided to the agent pod), or `kubeConfig` to use credentials\nfrom `~/.kube/config`."
             },
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s",
               "description": "Collection interval for metrics."
             },
@@ -15443,7 +15443,7 @@
               "description": "Whether OpenShift support should be enabled or not."
             },
             "metadata_collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "5m0s",
               "description": "Collection interval for metadata.\nMetadata of the particular entity in the cluster is collected when the entity changes.\nIn addition metadata of all entities is collected periodically even if no changes happen.\nSetting the duration to 0 will disable periodic collection (however will not impact\nmetadata collection on changes)."
             },
@@ -16268,7 +16268,7 @@
                       "description": "The total number of times to retry a metadata request when the\ncluster is in the middle of a leader election or at startup (default 3)."
                     },
                     "backoff": {
-                      "type": "integer",
+                      "type": "string",
                       "default": "250ms",
                       "description": "How long to wait for leader election to occur before retrying\n(default 250ms). Similar to the JVM's `retry.backoff.ms`."
                     }
@@ -16303,7 +16303,7 @@
                   "description": "Whether or not to auto-commit updated offsets back to the broker.\n(default enabled)."
                 },
                 "interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "1s",
                   "description": "How frequently to commit updated offsets. Ineffective unless\nauto-commit is enabled (default 1s)"
                 }
@@ -16332,15 +16332,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "brokers": {
               "description": "The list of kafka brokers (default localhost:9092)"
@@ -16506,15 +16506,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "auth_type": {
               "type": "string",
@@ -16554,7 +16554,7 @@
               "default": ""
             },
             "reload_interval": {
-              "type": "integer"
+              "type": "string"
             },
             "insecure_skip_verify": {
               "type": "boolean",
@@ -17209,15 +17209,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s",
               "description": "Timeout for the memcache stats request"
             },
@@ -17351,15 +17351,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "tls": {
@@ -17398,7 +17398,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -17755,15 +17755,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "3m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "public_key": {
               "type": "string",
@@ -18543,7 +18543,7 @@
                   "description": "these parameters are only relevant in retrieval mode"
                 },
                 "poll_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 },
                 "page_size": {
@@ -18577,7 +18577,7 @@
                   "default": true
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5s"
                 },
                 "randomization_factor": {
@@ -18587,11 +18587,11 @@
                   "type": "number"
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s"
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s"
                 }
               }
@@ -18603,15 +18603,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "username": {
               "type": "string",
@@ -19101,7 +19101,7 @@
                   "default": 250
                 },
                 "time_limit": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "24h0m0s"
                 }
               }
@@ -19112,15 +19112,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "endpoint": {
@@ -19163,7 +19163,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -19263,15 +19263,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "endpoint": {
               "type": "string",
@@ -19313,7 +19313,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -19543,15 +19543,15 @@
               "default": ""
             },
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "metrics": {
               "type": "object",
@@ -19891,7 +19891,7 @@
               "default": false
             },
             "poll_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "200ms"
             },
             "start_at": {
@@ -19922,7 +19922,7 @@
               "default": "utf-8"
             },
             "force_flush_period": {
-              "type": "integer",
+              "type": "string",
               "default": "500ms"
             },
             "multiline": {
@@ -19955,15 +19955,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "5s",
               "description": "The maximum amount of time to wait for Podman API responses.  Default is 5s"
             },
@@ -19990,15 +19990,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "username": {
               "type": "string",
@@ -20053,7 +20053,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -20413,7 +20413,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -20436,7 +20436,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "headers": {
               "type": "object",
@@ -20455,7 +20455,7 @@
             "max_conns_per_host": {},
             "idle_conn_timeout": {},
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s",
               "description": "CollectionInterval is the interval at which metrics should be collected"
             },
@@ -20577,7 +20577,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -20600,7 +20600,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "headers": {
               "type": "object",
@@ -20691,7 +20691,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -20714,7 +20714,7 @@
               "type": "integer"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "headers": {
               "type": "object",
@@ -20755,15 +20755,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "endpoint": {
@@ -20806,7 +20806,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -20975,15 +20975,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "endpoint": {
               "type": "string",
@@ -21034,7 +21034,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -21408,15 +21408,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "endpoint": {
@@ -21459,7 +21459,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -21599,15 +21599,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "endpoint": {
               "type": "string",
@@ -21649,7 +21649,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -22234,14 +22234,14 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer"
+              "type": "string"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "endpoint": {
               "type": "string",
@@ -22315,15 +22315,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "30m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "metrics": {
               "type": "object",
@@ -22778,7 +22778,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -22895,15 +22895,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "driver": {
               "type": "string",
@@ -22921,15 +22921,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "metrics": {
               "type": "object",
@@ -23187,15 +23187,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "endpoint": {
@@ -23326,7 +23326,7 @@
               "default": "udp"
             },
             "aggregation_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "enable_metric_type": {
@@ -23396,17 +23396,17 @@
                   "description": "Enabled indicates whether to not retry sending logs in case of receiving a retryable error from a downstream\nconsumer. Default is false."
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "1s",
                   "description": "InitialInterval the time to wait after the first failure before retrying. Default value is 1 second."
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "30s",
                   "description": "MaxInterval is the upper bound on backoff interval. Once this value is reached the delay between\nconsecutive retries will always be `MaxInterval`. Default value is 30 seconds."
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "default": "5m0s",
                   "description": "MaxElapsedTime is the maximum amount of time (including retries) spent trying to send a logs batch to\na downstream consumer. Once this value is reached, the data is discarded. It never stops if MaxElapsedTime == 0.\nDefault value is 5 minutes."
                 }
@@ -23495,15 +23495,15 @@
                   "description": "Enabled indicates whether to not retry sending logs in case of receiving a retryable error from a downstream\nconsumer. Default is false."
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "InitialInterval the time to wait after the first failure before retrying. Default value is 1 second."
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "MaxInterval is the upper bound on backoff interval. Once this value is reached the delay between\nconsecutive retries will always be `MaxInterval`. Default value is 30 seconds."
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "MaxElapsedTime is the maximum amount of time (including retries) spent trying to send a logs batch to\na downstream consumer. Once this value is reached, the data is discarded. It never stops if MaxElapsedTime == 0.\nDefault value is 5 minutes."
                 }
               },
@@ -23586,15 +23586,15 @@
                   "description": "Enabled indicates whether to not retry sending logs in case of receiving a retryable error from a downstream\nconsumer. Default is false."
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "InitialInterval the time to wait after the first failure before retrying. Default value is 1 second."
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "MaxInterval is the upper bound on backoff interval. Once this value is reached the delay between\nconsecutive retries will always be `MaxInterval`. Default value is 30 seconds."
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "MaxElapsedTime is the maximum amount of time (including retries) spent trying to send a logs batch to\na downstream consumer. Once this value is reached, the data is discarded. It never stops if MaxElapsedTime == 0.\nDefault value is 5 minutes."
                 }
               },
@@ -23606,15 +23606,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "2m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "tls": {
               "type": "object",
@@ -23652,7 +23652,7 @@
                   "default": ""
                 },
                 "reload_interval": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "insecure": {
                   "type": "boolean",
@@ -24162,7 +24162,7 @@
               "default": "localhost:2003"
             },
             "tcp_idle_timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "30s",
               "description": "TCPIdleTimeout is the timout for idle TCP connections."
             },
@@ -24243,15 +24243,15 @@
                   "description": "Enabled indicates whether to not retry sending logs in case of receiving a retryable error from a downstream\nconsumer. Default is false."
                 },
                 "initial_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "InitialInterval the time to wait after the first failure before retrying. Default value is 1 second."
                 },
                 "max_interval": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "MaxInterval is the upper bound on backoff interval. Once this value is reached the delay between\nconsecutive retries will always be `MaxInterval`. Default value is 30 seconds."
                 },
                 "max_elapsed_time": {
-                  "type": "integer",
+                  "type": "string",
                   "description": "MaxElapsedTime is the maximum amount of time (including retries) spent trying to send a logs batch to\na downstream consumer. Once this value is reached, the data is discarded. It never stops if MaxElapsedTime == 0.\nDefault value is 5 minutes."
                 }
               },
@@ -24263,15 +24263,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "1m0s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer"
+              "type": "string"
             },
             "metrics": {
               "type": "object",
@@ -24318,15 +24318,15 @@
           "type": "object",
           "properties": {
             "collection_interval": {
-              "type": "integer",
+              "type": "string",
               "default": "10s"
             },
             "initial_delay": {
-              "type": "integer",
+              "type": "string",
               "default": "1s"
             },
             "timeout": {
-              "type": "integer",
+              "type": "string",
               "default": "10s",
               "description": "Timeout within which requests should be completed."
             },
