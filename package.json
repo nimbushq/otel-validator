@@ -9,13 +9,26 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:yaml"
+  ],
   "browser": "./dist/web/extension.js",
+  "extensionDependencies": ["redhat.vscode-yaml"],
   "contributes": {
     "commands": [
       {
         "command": "otel-validator.helloWorld",
         "title": "Hello World"
+      }
+    ],
+    "yamlValidation": [
+      {
+        "fileMatch": "otel*.yaml",
+        "url": "https://raw.githubusercontent.com/nimbushq/otel-validator/main/assets/scehma.json"
+      },
+      {
+        "fileMatch": "otel*.yml",
+        "url": "./dist/schema.json"
       }
     ]
   },
