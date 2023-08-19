@@ -12,6 +12,7 @@
   "activationEvents": [
     "onLanguage:yaml"
   ],
+  "main": "./dist/web/extension.js",
   "browser": "./dist/web/extension.js",
   "extensionDependencies": ["redhat.vscode-yaml"],
   "contributes": {
