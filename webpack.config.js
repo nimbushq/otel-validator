@@ -55,9 +55,9 @@ const webExtensionConfig = {
         {
           from: path.join(
             "assets",
-            "scehma.json",
+            "schema.json",
           ),
-          to: "schema.validator.json",
+          to: "schema..json",
         },
       ],
     }),

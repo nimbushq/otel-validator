@@ -1,7 +1,7 @@
 {
   "name": "otel-validator",
-  "displayName": "otel-validator",
-  "description": "Validates OTEL Configuration",
+  "displayName": "OTEL Validator",
+  "description": "Validates Open Telemetry (OTEL) Configuration",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.81.0"
@@ -40,6 +40,7 @@
     "compile-web": "webpack",
     "watch-web": "webpack --watch",
     "package-web": "webpack --mode production --devtool hidden-source-map",
+    "package": "vsce package --yarn",
     "lint": "eslint src --ext ts",
     "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
   },
