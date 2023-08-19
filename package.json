@@ -13,6 +13,11 @@
     "onLanguage:yaml"
   ],
   "main": "./dist/web/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nimbushq/otel-validator.git"
+  },
+  "license": "Apache-2.0",
   "browser": "./dist/web/extension.js",
   "extensionDependencies": ["redhat.vscode-yaml"],
   "contributes": {
