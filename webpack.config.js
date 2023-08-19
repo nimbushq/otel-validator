@@ -11,6 +11,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const CopyPlugin = require("copy-webpack-plugin");
 
 /** @type WebpackConfig */
 const webExtensionConfig = {
@@ -49,6 +50,17 @@ const webExtensionConfig = {
 		}]
 	},
 	plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.join(
+            "assets",
+            "scehma.json",
+          ),
+          to: "schema.validator.json",
+        },
+      ],
+    }),
 		new webpack.optimize.LimitChunkCountPlugin({
 			maxChunks: 1 // disable chunks by default since web extensions must be a single bundle
 		}),
