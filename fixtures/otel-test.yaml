@@ -1,0 +1,27 @@
+receivers:
+  filelog:
+    include: [ "/tmp/vector*.log" ]
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+processors:
+  transform:
+    error_mode: ignore
+    log_statements:
+      - context: log
+        statements:
+        - replace_pattern(attributes["fsPath"], "^.*/(.*?)$", "$$1") where attributes["fsPath"] != nil
+
+exporters:
+  file:
+    path: /tmp/otel-test-export.txt
+    format: json
+
+service:
+    pipelines:
+      logs:
+        receivers: [filelog, otlp]
+        processors: [transform]
+        exporters: [file]

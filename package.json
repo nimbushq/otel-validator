@@ -29,11 +29,11 @@
     ],
     "yamlValidation": [
       {
-        "fileMatch": "otel*.yaml",
-        "url": "https://raw.githubusercontent.com/nimbushq/otel-validator/main/assets/schema.json"
+        "fileMatch": "otel*.yml",
+        "url": "./dist/schema.json"
       },
       {
-        "fileMatch": "otel*.yml",
+        "fileMatch": "otel*.yaml",
         "url": "./dist/schema.json"
       }
     ]
