@@ -1,6 +1,4 @@
 
-
-
 exporters:
   prometheus:
     endpoints_bad_name: "http://localhost:9090"
