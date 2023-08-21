@@ -12,7 +12,10 @@
       "patternProperties": {
         "additionalProperties": false,
         "^alibabacloud_logservice(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -52,7 +55,10 @@
           }
         },
         "^awscloudwatchlogs(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "retry_on_failure": {
               "type": "object",
@@ -173,7 +179,10 @@
           }
         },
         "^awsemf(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -305,7 +314,10 @@
           }
         },
         "^awskinesis(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -406,7 +418,10 @@
           }
         },
         "^awsxray(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -505,7 +520,10 @@
           }
         },
         "^azuredataexplorer(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "cluster_uri": {
               "type": "string",
@@ -562,7 +580,10 @@
           }
         },
         "^azuremonitor(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -587,7 +608,10 @@
           }
         },
         "^carbon(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -602,7 +626,10 @@
           }
         },
         "^cassandra(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "dsn": {
               "type": "string",
@@ -647,7 +674,10 @@
           }
         },
         "^clickhouse(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -742,7 +772,10 @@
           }
         },
         "^coralogix(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -1265,7 +1298,10 @@
           }
         },
         "^datadog(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -1514,7 +1550,10 @@
           }
         },
         "^dataset(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "dataset_url": {
               "type": "string",
@@ -1651,7 +1690,10 @@
           }
         },
         "^dynatrace(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -1817,7 +1859,10 @@
           }
         },
         "^elasticsearch(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -2073,7 +2118,10 @@
           }
         },
         "^f5cloud(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -2243,7 +2291,10 @@
           }
         },
         "^file(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "path": {
               "type": "string",
@@ -2270,7 +2321,10 @@
           }
         },
         "^googlecloud(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "project": {
               "type": "string",
@@ -2513,7 +2567,10 @@
           }
         },
         "^googlecloudpubsub(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -2600,7 +2657,10 @@
           }
         },
         "^googlemanagedprometheus(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "project": {
               "type": "string",
@@ -2714,7 +2774,10 @@
           }
         },
         "^influxdb(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -2909,7 +2972,10 @@
           }
         },
         "^instana(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3002,7 +3068,10 @@
           }
         },
         "^jaeger(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -3142,7 +3211,10 @@
           }
         },
         "^jaeger_thrift(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3230,7 +3302,10 @@
           }
         },
         "^kafka(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -3375,7 +3450,10 @@
           }
         },
         "^loadbalancing(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocol": {
               "type": "object",
@@ -3548,7 +3626,10 @@
           }
         },
         "^logging(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "loglevel": {},
             "verbosity": {
@@ -3565,7 +3646,10 @@
           }
         },
         "^logicmonitor(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3726,7 +3810,10 @@
           }
         },
         "^logzio(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3883,7 +3970,10 @@
           }
         },
         "^loki(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4025,7 +4115,10 @@
           }
         },
         "^mezmo(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4170,7 +4263,10 @@
           }
         },
         "^opencensus(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4306,7 +4402,10 @@
           }
         },
         "^otlp(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -4446,7 +4545,10 @@
           }
         },
         "^otlphttp(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4594,7 +4696,10 @@
           }
         },
         "^parquet(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "path": {
               "type": "string",
@@ -4603,7 +4708,10 @@
           }
         },
         "^prometheus(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4672,7 +4780,10 @@
           }
         },
         "^prometheusremotewrite(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -4847,7 +4958,10 @@
           }
         },
         "^pulsar(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -4997,7 +5111,10 @@
           }
         },
         "^sapm(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -5091,7 +5208,10 @@
           }
         },
         "^sentry(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "dsn": {
               "type": "string",
@@ -5111,7 +5231,10 @@
           }
         },
         "^signalfx(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -5458,7 +5581,10 @@
           }
         },
         "^skywalking(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -5603,7 +5729,10 @@
           }
         },
         "^splunk_hec(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -5909,7 +6038,10 @@
           }
         },
         "^sumologic(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -6092,7 +6224,10 @@
           }
         },
         "^tanzuobservability(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -6330,7 +6465,10 @@
           }
         },
         "^tencentcloud_logservice(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "region": {
               "type": "string",
@@ -6360,7 +6498,10 @@
           }
         },
         "^zipkin(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -6507,7 +6648,10 @@
       "properties": {
         "additionalProperties": false,
         "alibabacloud_logservice": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -6547,7 +6691,10 @@
           }
         },
         "awscloudwatchlogs": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "retry_on_failure": {
               "type": "object",
@@ -6668,7 +6815,10 @@
           }
         },
         "awsemf": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -6800,7 +6950,10 @@
           }
         },
         "awskinesis": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -6901,7 +7054,10 @@
           }
         },
         "awsxray": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -7000,7 +7156,10 @@
           }
         },
         "azuredataexplorer": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "cluster_uri": {
               "type": "string",
@@ -7057,7 +7216,10 @@
           }
         },
         "azuremonitor": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -7082,7 +7244,10 @@
           }
         },
         "carbon": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -7097,7 +7262,10 @@
           }
         },
         "cassandra": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "dsn": {
               "type": "string",
@@ -7142,7 +7310,10 @@
           }
         },
         "clickhouse": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -7237,7 +7408,10 @@
           }
         },
         "coralogix": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -7760,7 +7934,10 @@
           }
         },
         "datadog": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -8009,7 +8186,10 @@
           }
         },
         "dataset": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "dataset_url": {
               "type": "string",
@@ -8146,7 +8326,10 @@
           }
         },
         "dynatrace": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -8312,7 +8495,10 @@
           }
         },
         "elasticsearch": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -8568,7 +8754,10 @@
           }
         },
         "f5cloud": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -8738,7 +8927,10 @@
           }
         },
         "file": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "path": {
               "type": "string",
@@ -8765,7 +8957,10 @@
           }
         },
         "googlecloud": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "project": {
               "type": "string",
@@ -9008,7 +9203,10 @@
           }
         },
         "googlecloudpubsub": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -9095,7 +9293,10 @@
           }
         },
         "googlemanagedprometheus": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "project": {
               "type": "string",
@@ -9209,7 +9410,10 @@
           }
         },
         "influxdb": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -9404,7 +9608,10 @@
           }
         },
         "instana": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -9497,7 +9704,10 @@
           }
         },
         "jaeger": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -9637,7 +9847,10 @@
           }
         },
         "jaeger_thrift": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -9725,7 +9938,10 @@
           }
         },
         "kafka": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -9870,7 +10086,10 @@
           }
         },
         "loadbalancing": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocol": {
               "type": "object",
@@ -10043,7 +10262,10 @@
           }
         },
         "logging": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "loglevel": {},
             "verbosity": {
@@ -10060,7 +10282,10 @@
           }
         },
         "logicmonitor": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10221,7 +10446,10 @@
           }
         },
         "logzio": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10378,7 +10606,10 @@
           }
         },
         "loki": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10520,7 +10751,10 @@
           }
         },
         "mezmo": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10665,7 +10899,10 @@
           }
         },
         "opencensus": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10801,7 +11038,10 @@
           }
         },
         "otlp": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -10941,7 +11181,10 @@
           }
         },
         "otlphttp": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11089,7 +11332,10 @@
           }
         },
         "parquet": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "path": {
               "type": "string",
@@ -11098,7 +11344,10 @@
           }
         },
         "prometheus": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11167,7 +11416,10 @@
           }
         },
         "prometheusremotewrite": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -11342,7 +11594,10 @@
           }
         },
         "pulsar": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -11492,7 +11747,10 @@
           }
         },
         "sapm": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11586,7 +11844,10 @@
           }
         },
         "sentry": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "dsn": {
               "type": "string",
@@ -11606,7 +11867,10 @@
           }
         },
         "signalfx": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -11953,7 +12217,10 @@
           }
         },
         "skywalking": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12098,7 +12365,10 @@
           }
         },
         "splunk_hec": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12404,7 +12674,10 @@
           }
         },
         "sumologic": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12587,7 +12860,10 @@
           }
         },
         "tanzuobservability": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -12825,7 +13101,10 @@
           }
         },
         "tencentcloud_logservice": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "region": {
               "type": "string",
@@ -12855,7 +13134,10 @@
           }
         },
         "zipkin": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -13007,7 +13289,10 @@
       "patternProperties": {
         "additionalProperties": false,
         "^asapclient(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "key_id": {
               "type": "string",
@@ -13028,7 +13313,10 @@
           }
         },
         "^awsproxy(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13116,7 +13404,10 @@
           }
         },
         "^basicauth(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "htpasswd": {
               "description": "Htpasswd settings."
@@ -13127,7 +13418,10 @@
           }
         },
         "^bearertokenauth(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "scheme": {
               "type": "string",
@@ -13147,7 +13441,10 @@
           }
         },
         "^db_storage(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "driver": {
               "type": "string",
@@ -13160,7 +13457,10 @@
           }
         },
         "^docker_observer(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13202,7 +13502,10 @@
           }
         },
         "^ecs_task_observer(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13297,7 +13600,10 @@
           }
         },
         "^file_storage(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "directory": {
               "type": "string",
@@ -13313,13 +13619,19 @@
           }
         },
         "^headers_setter(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "headers": {}
           }
         },
         "^health_check(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13374,7 +13686,10 @@
           }
         },
         "^host_observer(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "refresh_interval": {
               "type": "string",
@@ -13384,7 +13699,10 @@
           }
         },
         "^http_forwarder(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "ingress": {
               "type": "object",
@@ -13506,7 +13824,10 @@
           }
         },
         "^jaegerremotesampling(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "http": {},
             "grpc": {},
@@ -13532,7 +13853,10 @@
           }
         },
         "^k8s_observer(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -13557,7 +13881,10 @@
           }
         },
         "^memory_ballast(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "size_mib": {
               "default": 0
@@ -13568,7 +13895,10 @@
           }
         },
         "^oauth2client(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "client_id": {
               "type": "string",
@@ -13656,7 +13986,10 @@
           }
         },
         "^oidc(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attribute": {
               "type": "string",
@@ -13691,7 +14024,10 @@
           }
         },
         "^pprof(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13713,7 +14049,10 @@
           }
         },
         "^sigv4auth(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "region": {
               "type": "string",
@@ -13745,7 +14084,10 @@
           }
         },
         "^zpages(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13757,7 +14099,10 @@
       "properties": {
         "additionalProperties": false,
         "asapclient": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "key_id": {
               "type": "string",
@@ -13778,7 +14123,10 @@
           }
         },
         "awsproxy": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13866,7 +14214,10 @@
           }
         },
         "basicauth": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "htpasswd": {
               "description": "Htpasswd settings."
@@ -13877,7 +14228,10 @@
           }
         },
         "bearertokenauth": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "scheme": {
               "type": "string",
@@ -13897,7 +14251,10 @@
           }
         },
         "db_storage": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "driver": {
               "type": "string",
@@ -13910,7 +14267,10 @@
           }
         },
         "docker_observer": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13952,7 +14312,10 @@
           }
         },
         "ecs_task_observer": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14047,7 +14410,10 @@
           }
         },
         "file_storage": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "directory": {
               "type": "string",
@@ -14063,13 +14429,19 @@
           }
         },
         "headers_setter": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "headers": {}
           }
         },
         "health_check": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14124,7 +14496,10 @@
           }
         },
         "host_observer": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "refresh_interval": {
               "type": "string",
@@ -14134,7 +14509,10 @@
           }
         },
         "http_forwarder": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "ingress": {
               "type": "object",
@@ -14256,7 +14634,10 @@
           }
         },
         "jaegerremotesampling": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "http": {},
             "grpc": {},
@@ -14282,7 +14663,10 @@
           }
         },
         "k8s_observer": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -14307,7 +14691,10 @@
           }
         },
         "memory_ballast": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "size_mib": {
               "default": 0
@@ -14318,7 +14705,10 @@
           }
         },
         "oauth2client": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "client_id": {
               "type": "string",
@@ -14406,7 +14796,10 @@
           }
         },
         "oidc": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attribute": {
               "type": "string",
@@ -14441,7 +14834,10 @@
           }
         },
         "pprof": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14463,7 +14859,10 @@
           }
         },
         "sigv4auth": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "region": {
               "type": "string",
@@ -14495,7 +14894,10 @@
           }
         },
         "zpages": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14512,7 +14914,10 @@
       "patternProperties": {
         "additionalProperties": false,
         "^attributes(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -14526,7 +14931,10 @@
           }
         },
         "^batch(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -14545,7 +14953,10 @@
           }
         },
         "^cumulativetodelta(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "max_staleness": {
               "type": "string",
@@ -14588,7 +14999,10 @@
           }
         },
         "^datadog(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "metrics_exporter": {
               "type": "object",
@@ -14599,7 +15013,10 @@
           }
         },
         "^deltatorate(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "metrics": {
               "description": "List of delta sum metrics to convert to rates"
@@ -14607,7 +15024,10 @@
           }
         },
         "^experimental_metricsgeneration(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "rules": {
               "description": "Set of rules for generating new metrics"
@@ -14615,7 +15035,10 @@
           }
         },
         "^filter(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "error_mode": {
               "type": "string",
@@ -14689,7 +15112,10 @@
           }
         },
         "^groupbyattrs(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "keys": {
               "description": "GroupByKeys describes the attribute names that are going to be used for grouping.\nEmpty value is allowed, since processor in such case can compact data"
@@ -14697,7 +15123,10 @@
           }
         },
         "^groupbytrace(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "num_traces": {
               "type": "integer",
@@ -14727,7 +15156,10 @@
           }
         },
         "^k8sattributes(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -14799,7 +15231,10 @@
           }
         },
         "^memory_limiter(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "check_interval": {
               "type": "string"
@@ -14819,7 +15254,10 @@
           }
         },
         "^metricstransform(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "transforms": {
               "description": "transform specifies a list of transforms on metrics with each transform focusing on one metric."
@@ -14827,7 +15265,10 @@
           }
         },
         "^probabilistic_sampler(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sampling_percentage": {
               "description": "SamplingPercentage is the percentage rate at which traces or logs are going to be sampled. Defaults to zero, i.e.: no sample.\nValues greater or equal 100 are treated as \"sample all traces/logs\"."
@@ -14854,7 +15295,10 @@
           }
         },
         "^resource(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "description": "AttributesActions specifies the list of actions to be applied on resource attributes.\nThe set of actions are {INSERT, UPDATE, UPSERT, DELETE, HASH, EXTRACT}."
@@ -14862,7 +15306,10 @@
           }
         },
         "^resourcedetection(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "detectors": {
               "description": "Detectors is an ordered list of named detectors that should be\nrun to attempt to detect resource information."
@@ -16301,7 +16748,10 @@
           }
         },
         "^routing(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "default_exporters": {
               "description": "DefaultExporters contains the list of exporters to use when a more specific record can't be found in the routing table.\nOptional."
@@ -16332,7 +16782,10 @@
           }
         },
         "^servicegraph(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -16378,7 +16831,10 @@
           }
         },
         "^span(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -16410,7 +16866,10 @@
           }
         },
         "^spanmetrics(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -16445,7 +16904,10 @@
           }
         },
         "^tail_sampling(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "decision_wait": {
               "type": "string",
@@ -16466,7 +16928,10 @@
           }
         },
         "^transform(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "error_mode": {
               "type": "string",
@@ -16482,7 +16947,10 @@
       "properties": {
         "additionalProperties": false,
         "attributes": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -16496,7 +16964,10 @@
           }
         },
         "batch": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "timeout": {
               "type": "string",
@@ -16515,7 +16986,10 @@
           }
         },
         "cumulativetodelta": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "max_staleness": {
               "type": "string",
@@ -16558,7 +17032,10 @@
           }
         },
         "datadog": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "metrics_exporter": {
               "type": "object",
@@ -16569,7 +17046,10 @@
           }
         },
         "deltatorate": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "metrics": {
               "description": "List of delta sum metrics to convert to rates"
@@ -16577,7 +17057,10 @@
           }
         },
         "experimental_metricsgeneration": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "rules": {
               "description": "Set of rules for generating new metrics"
@@ -16585,7 +17068,10 @@
           }
         },
         "filter": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "error_mode": {
               "type": "string",
@@ -16659,7 +17145,10 @@
           }
         },
         "groupbyattrs": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "keys": {
               "description": "GroupByKeys describes the attribute names that are going to be used for grouping.\nEmpty value is allowed, since processor in such case can compact data"
@@ -16667,7 +17156,10 @@
           }
         },
         "groupbytrace": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "num_traces": {
               "type": "integer",
@@ -16697,7 +17189,10 @@
           }
         },
         "k8sattributes": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -16769,7 +17264,10 @@
           }
         },
         "memory_limiter": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "check_interval": {
               "type": "string"
@@ -16789,7 +17287,10 @@
           }
         },
         "metricstransform": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "transforms": {
               "description": "transform specifies a list of transforms on metrics with each transform focusing on one metric."
@@ -16797,7 +17298,10 @@
           }
         },
         "probabilistic_sampler": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "sampling_percentage": {
               "description": "SamplingPercentage is the percentage rate at which traces or logs are going to be sampled. Defaults to zero, i.e.: no sample.\nValues greater or equal 100 are treated as \"sample all traces/logs\"."
@@ -16824,7 +17328,10 @@
           }
         },
         "resource": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "description": "AttributesActions specifies the list of actions to be applied on resource attributes.\nThe set of actions are {INSERT, UPDATE, UPSERT, DELETE, HASH, EXTRACT}."
@@ -16832,7 +17339,10 @@
           }
         },
         "resourcedetection": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "detectors": {
               "description": "Detectors is an ordered list of named detectors that should be\nrun to attempt to detect resource information."
@@ -18271,7 +18781,10 @@
           }
         },
         "routing": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "default_exporters": {
               "description": "DefaultExporters contains the list of exporters to use when a more specific record can't be found in the routing table.\nOptional."
@@ -18302,7 +18815,10 @@
           }
         },
         "servicegraph": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -18348,7 +18864,10 @@
           }
         },
         "span": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -18380,7 +18899,10 @@
           }
         },
         "spanmetrics": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -18415,7 +18937,10 @@
           }
         },
         "tail_sampling": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "decision_wait": {
               "type": "string",
@@ -18436,7 +18961,10 @@
           }
         },
         "transform": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "error_mode": {
               "type": "string",
@@ -18457,7 +18985,10 @@
       "patternProperties": {
         "additionalProperties": false,
         "^active_directory_ds(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -18678,7 +19209,10 @@
           }
         },
         "^aerospike(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -18906,7 +19440,10 @@
           }
         },
         "^apache(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -19170,7 +19707,10 @@
           }
         },
         "^apachespark(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20039,7 +20579,10 @@
           }
         },
         "^awscloudwatch(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "region": {
               "type": "string",
@@ -20059,7 +20602,10 @@
           }
         },
         "^awscontainerinsightreceiver(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20089,7 +20635,10 @@
           }
         },
         "^awsecscontainermetrics(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20099,7 +20648,10 @@
           }
         },
         "^awsfirehose(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -20134,7 +20686,10 @@
           }
         },
         "^awsxray(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -20150,7 +20705,10 @@
           }
         },
         "^azureblob(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "connection_string": {
               "type": "string",
@@ -20196,7 +20754,10 @@
           }
         },
         "^azureeventhub(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "connection": {
               "type": "string",
@@ -20218,7 +20779,10 @@
           }
         },
         "^azuremonitor(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20295,7 +20859,10 @@
           }
         },
         "^bigip(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20786,7 +21353,10 @@
           }
         },
         "^carbon(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -20807,7 +21377,10 @@
           }
         },
         "^chrony(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20914,7 +21487,10 @@
           }
         },
         "^cloudfoundry(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "rlp_gateway": {
               "type": "object",
@@ -21041,7 +21617,10 @@
           }
         },
         "^collectd(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -21062,7 +21641,10 @@
           }
         },
         "^couchdb(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -21279,7 +21861,10 @@
           }
         },
         "^datadog(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -21309,7 +21894,10 @@
           }
         },
         "^docker_stats(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -22181,7 +22769,10 @@
           }
         },
         "^elasticsearch(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -23357,7 +23948,10 @@
           }
         },
         "^expvar(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -23746,7 +24340,10 @@
           }
         },
         "^filelog(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "type": "object",
@@ -23891,7 +24488,10 @@
           }
         },
         "^flinkmetrics(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -24386,7 +24986,10 @@
           }
         },
         "^fluentforward(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -24396,7 +24999,10 @@
           }
         },
         "^googlecloudpubsub(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "project": {
               "type": "string",
@@ -24444,7 +25050,10 @@
           }
         },
         "^googlecloudspanner(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -24480,7 +25089,10 @@
           }
         },
         "^haproxy(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -24974,7 +25586,10 @@
           }
         },
         "^hostmetrics(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -24995,7 +25610,10 @@
           }
         },
         "^httpcheck(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25052,7 +25670,10 @@
           }
         },
         "^iis(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25236,7 +25857,10 @@
           }
         },
         "^influxdb(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -25261,7 +25885,10 @@
           }
         },
         "^jaeger(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocols": {
               "type": "object",
@@ -25284,7 +25911,10 @@
           }
         },
         "^jmx(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "jar_path": {
               "type": "string",
@@ -25397,7 +26027,10 @@
           }
         },
         "^journald(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -25430,7 +26063,10 @@
           }
         },
         "^k8s_cluster(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -26281,7 +26917,10 @@
           }
         },
         "^k8s_events(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -26294,7 +26933,10 @@
           }
         },
         "^k8sobjects(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -26305,7 +26947,10 @@
           }
         },
         "^kafka(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "brokers": {
               "description": "The list of kafka brokers (default localhost:9092)"
@@ -26423,7 +27068,10 @@
           }
         },
         "^kafkametrics(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -26610,7 +27258,10 @@
           }
         },
         "^kubeletstats(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -27358,7 +28009,10 @@
           }
         },
         "^loki(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocols": {
               "type": "object",
@@ -27376,7 +28030,10 @@
           }
         },
         "^memcached(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -27530,7 +28187,10 @@
           }
         },
         "^mongodb(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -27968,7 +28628,10 @@
           }
         },
         "^mongodbatlas(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -28894,7 +29557,10 @@
           }
         },
         "^mysql(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -29450,7 +30116,10 @@
           }
         },
         "^nginx(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -29608,7 +30277,10 @@
           }
         },
         "^nsxt(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -29846,7 +30518,10 @@
           }
         },
         "^opencensus(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -29882,7 +30557,10 @@
           }
         },
         "^oracledb(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "datasource": {
               "type": "string",
@@ -30240,7 +30918,10 @@
           }
         },
         "^otlp(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocols": {
               "type": "object",
@@ -30253,7 +30934,10 @@
           }
         },
         "^otlpjsonfile(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "include": {},
             "exclude": {},
@@ -30347,7 +31031,10 @@
           }
         },
         "^podman_stats(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -30382,7 +31069,10 @@
           }
         },
         "^postgresql(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -30768,7 +31458,10 @@
           }
         },
         "^prometheus(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "trim_metric_suffixes": {
               "type": "boolean",
@@ -30795,7 +31488,10 @@
           }
         },
         "^prometheus_simple(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -30911,7 +31607,10 @@
           }
         },
         "^pulsar(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -30961,7 +31660,10 @@
           }
         },
         "^purefa(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -31076,7 +31778,10 @@
           }
         },
         "^purefb(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -31180,7 +31885,10 @@
           }
         },
         "^rabbitmq(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -31397,7 +32105,10 @@
           }
         },
         "^receiver_creator(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "watch_observers": {
               "description": "WatchObservers are the extensions to listen to endpoints from."
@@ -31412,7 +32123,10 @@
           }
         },
         "^redis(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -31882,7 +32596,10 @@
           }
         },
         "^riak(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -32084,7 +32801,10 @@
           }
         },
         "^saphana(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -32696,7 +33416,10 @@
           }
         },
         "^sapm(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -32726,7 +33449,10 @@
           }
         },
         "^signalfx(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -32756,7 +33482,10 @@
           }
         },
         "^skywalking(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocols": {
               "type": "object",
@@ -32770,7 +33499,10 @@
           }
         },
         "^snmp(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -32851,7 +33583,10 @@
           }
         },
         "^snowflake(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33305,7 +34040,10 @@
           }
         },
         "^solace(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "broker": {
               "description": "The list of solace brokers (default localhost:5671)"
@@ -33401,7 +34139,10 @@
           }
         },
         "^splunk_hec(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -33473,7 +34214,10 @@
           }
         },
         "^sqlquery(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33499,7 +34243,10 @@
           }
         },
         "^sqlserver(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33790,7 +34537,10 @@
           }
         },
         "^sshcheck(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33930,7 +34680,10 @@
           }
         },
         "^statsd(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -33956,7 +34709,10 @@
           }
         },
         "^syslog(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "type": "object",
@@ -34032,7 +34788,10 @@
           }
         },
         "^tcplog(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "type": "object",
@@ -34130,7 +34889,10 @@
           }
         },
         "^udplog(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "type": "object",
@@ -34223,7 +34985,10 @@
           }
         },
         "^vcenter(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34824,7 +35589,10 @@
           }
         },
         "^wavefront(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -34843,7 +35611,10 @@
           }
         },
         "^webhookevent(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -34898,7 +35669,10 @@
           }
         },
         "^windowseventlog(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -34931,7 +35705,10 @@
           }
         },
         "^windowsperfcounters(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34956,7 +35733,10 @@
           }
         },
         "^zipkin(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -34986,7 +35766,10 @@
           }
         },
         "^zookeeper(/[^/]+)*$": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -35223,7 +36006,10 @@
       "properties": {
         "additionalProperties": false,
         "active_directory_ds": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -35444,7 +36230,10 @@
           }
         },
         "aerospike": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -35672,7 +36461,10 @@
           }
         },
         "apache": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -35936,7 +36728,10 @@
           }
         },
         "apachespark": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36805,7 +37600,10 @@
           }
         },
         "awscloudwatch": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "region": {
               "type": "string",
@@ -36825,7 +37623,10 @@
           }
         },
         "awscontainerinsightreceiver": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36855,7 +37656,10 @@
           }
         },
         "awsecscontainermetrics": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36865,7 +37669,10 @@
           }
         },
         "awsfirehose": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -36900,7 +37707,10 @@
           }
         },
         "awsxray": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -36916,7 +37726,10 @@
           }
         },
         "azureblob": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "connection_string": {
               "type": "string",
@@ -36962,7 +37775,10 @@
           }
         },
         "azureeventhub": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "connection": {
               "type": "string",
@@ -36984,7 +37800,10 @@
           }
         },
         "azuremonitor": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37061,7 +37880,10 @@
           }
         },
         "bigip": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37552,7 +38374,10 @@
           }
         },
         "carbon": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -37573,7 +38398,10 @@
           }
         },
         "chrony": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37680,7 +38508,10 @@
           }
         },
         "cloudfoundry": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "rlp_gateway": {
               "type": "object",
@@ -37807,7 +38638,10 @@
           }
         },
         "collectd": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -37828,7 +38662,10 @@
           }
         },
         "couchdb": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -38045,7 +38882,10 @@
           }
         },
         "datadog": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -38075,7 +38915,10 @@
           }
         },
         "docker_stats": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -38947,7 +39790,10 @@
           }
         },
         "elasticsearch": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -40123,7 +40969,10 @@
           }
         },
         "expvar": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -40512,7 +41361,10 @@
           }
         },
         "filelog": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "type": "object",
@@ -40657,7 +41509,10 @@
           }
         },
         "flinkmetrics": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -41152,7 +42007,10 @@
           }
         },
         "fluentforward": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -41162,7 +42020,10 @@
           }
         },
         "googlecloudpubsub": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "project": {
               "type": "string",
@@ -41210,7 +42071,10 @@
           }
         },
         "googlecloudspanner": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -41246,7 +42110,10 @@
           }
         },
         "haproxy": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -41740,7 +42607,10 @@
           }
         },
         "hostmetrics": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -41761,7 +42631,10 @@
           }
         },
         "httpcheck": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -41818,7 +42691,10 @@
           }
         },
         "iis": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42002,7 +42878,10 @@
           }
         },
         "influxdb": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -42027,7 +42906,10 @@
           }
         },
         "jaeger": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocols": {
               "type": "object",
@@ -42050,7 +42932,10 @@
           }
         },
         "jmx": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "jar_path": {
               "type": "string",
@@ -42163,7 +43048,10 @@
           }
         },
         "journald": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -42196,7 +43084,10 @@
           }
         },
         "k8s_cluster": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -43047,7 +43938,10 @@
           }
         },
         "k8s_events": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -43060,7 +43954,10 @@
           }
         },
         "k8sobjects": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "auth_type": {
               "type": "string",
@@ -43071,7 +43968,10 @@
           }
         },
         "kafka": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "brokers": {
               "description": "The list of kafka brokers (default localhost:9092)"
@@ -43189,7 +44089,10 @@
           }
         },
         "kafkametrics": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -43376,7 +44279,10 @@
           }
         },
         "kubeletstats": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -44124,7 +45030,10 @@
           }
         },
         "loki": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocols": {
               "type": "object",
@@ -44142,7 +45051,10 @@
           }
         },
         "memcached": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -44296,7 +45208,10 @@
           }
         },
         "mongodb": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -44734,7 +45649,10 @@
           }
         },
         "mongodbatlas": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -45660,7 +46578,10 @@
           }
         },
         "mysql": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -46216,7 +47137,10 @@
           }
         },
         "nginx": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -46374,7 +47298,10 @@
           }
         },
         "nsxt": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -46612,7 +47539,10 @@
           }
         },
         "opencensus": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -46648,7 +47578,10 @@
           }
         },
         "oracledb": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "datasource": {
               "type": "string",
@@ -47006,7 +47939,10 @@
           }
         },
         "otlp": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocols": {
               "type": "object",
@@ -47019,7 +47955,10 @@
           }
         },
         "otlpjsonfile": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "include": {},
             "exclude": {},
@@ -47113,7 +48052,10 @@
           }
         },
         "podman_stats": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -47148,7 +48090,10 @@
           }
         },
         "postgresql": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -47534,7 +48479,10 @@
           }
         },
         "prometheus": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "trim_metric_suffixes": {
               "type": "boolean",
@@ -47561,7 +48509,10 @@
           }
         },
         "prometheus_simple": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -47677,7 +48628,10 @@
           }
         },
         "pulsar": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -47727,7 +48681,10 @@
           }
         },
         "purefa": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -47842,7 +48799,10 @@
           }
         },
         "purefb": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -47946,7 +48906,10 @@
           }
         },
         "rabbitmq": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -48163,7 +49126,10 @@
           }
         },
         "receiver_creator": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "watch_observers": {
               "description": "WatchObservers are the extensions to listen to endpoints from."
@@ -48178,7 +49144,10 @@
           }
         },
         "redis": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -48648,7 +49617,10 @@
           }
         },
         "riak": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -48850,7 +49822,10 @@
           }
         },
         "saphana": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -49462,7 +50437,10 @@
           }
         },
         "sapm": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -49492,7 +50470,10 @@
           }
         },
         "signalfx": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -49522,7 +50503,10 @@
           }
         },
         "skywalking": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "protocols": {
               "type": "object",
@@ -49536,7 +50520,10 @@
           }
         },
         "snmp": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -49617,7 +50604,10 @@
           }
         },
         "snowflake": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50071,7 +51061,10 @@
           }
         },
         "solace": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "broker": {
               "description": "The list of solace brokers (default localhost:5671)"
@@ -50167,7 +51160,10 @@
           }
         },
         "splunk_hec": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -50239,7 +51235,10 @@
           }
         },
         "sqlquery": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50265,7 +51264,10 @@
           }
         },
         "sqlserver": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50556,7 +51558,10 @@
           }
         },
         "sshcheck": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50696,7 +51701,10 @@
           }
         },
         "statsd": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -50722,7 +51730,10 @@
           }
         },
         "syslog": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "type": "object",
@@ -50798,7 +51809,10 @@
           }
         },
         "tcplog": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "type": "object",
@@ -50896,7 +51910,10 @@
           }
         },
         "udplog": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "attributes": {
               "type": "object",
@@ -50989,7 +52006,10 @@
           }
         },
         "vcenter": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -51590,7 +52610,10 @@
           }
         },
         "wavefront": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -51609,7 +52632,10 @@
           }
         },
         "webhookevent": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -51664,7 +52690,10 @@
           }
         },
         "windowseventlog": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -51697,7 +52726,10 @@
           }
         },
         "windowsperfcounters": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -51722,7 +52754,10 @@
           }
         },
         "zipkin": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "endpoint": {
               "type": "string",
@@ -51752,7 +52787,10 @@
           }
         },
         "zookeeper": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "collection_interval": {
               "type": "string",
