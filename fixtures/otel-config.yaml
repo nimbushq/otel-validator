@@ -3,11 +3,16 @@
 
 exporters:
   prometheus:
-    endpoint: "0.0.0.0:8889"
-    const_labels:
-      label1: value1
+    endpoints_bad_name: "http://localhost:9090"
+    include_metadata: false
+    namespace: 
+    send_timestamps: false
+    metric_expiration: "5m0s"
+    enable_open_metrics: false
+    add_metric_suffixes: true
 
   logging:
+    verbosity: sda
 
   zipkin:
     endpoint: "http://zipkin-all-in-one:9411/api/v2/spans"

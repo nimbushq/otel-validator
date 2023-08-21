@@ -10,6 +10,7 @@
       "description": "An exporter is how data gets sent to different systems/back-ends. Generally, an exporter translates the internal format into another defined format.",
       "additionalProperties": false,
       "patternProperties": {
+        "additionalProperties": false,
         "^alibabacloud_logservice(/[^/]+)*$": {
           "type": "object",
           "properties": {
@@ -6351,6 +6352,7 @@
         }
       },
       "properties": {
+        "additionalProperties": false,
         "alibabacloud_logservice": {
           "type": "object",
           "properties": {
@@ -12697,6 +12699,7 @@
       "description": "Extensions provide capabilities on top of the primary functionality of the collector.",
       "additionalProperties": false,
       "patternProperties": {
+        "additionalProperties": false,
         "^asapclient(/[^/]+)*$": {
           "type": "object",
           "properties": {
@@ -13437,6 +13440,7 @@
         }
       },
       "properties": {
+        "additionalProperties": false,
         "asapclient": {
           "type": "object",
           "properties": {
@@ -14182,6 +14186,7 @@
       "description": "Processors are used at various stages of a pipeline. Generally, a processor pre-processes data before it is exported (e.g. modify attributes or sample) or helps ensure that data makes it through a pipeline successfully (e.g. batch/retry).",
       "additionalProperties": false,
       "patternProperties": {
+        "additionalProperties": false,
         "^attributes(/[^/]+)*$": {
           "type": "object",
           "properties": {
@@ -16015,6 +16020,7 @@
         }
       },
       "properties": {
+        "additionalProperties": false,
         "attributes": {
           "type": "object",
           "properties": {
@@ -17853,6 +17859,7 @@
       "description": "A receiver is how data gets into the OpenTelemetry Collector.",
       "additionalProperties": false,
       "patternProperties": {
+        "additionalProperties": false,
         "^active_directory_ds(/[^/]+)*$": {
           "type": "object",
           "properties": {
@@ -33444,6 +33451,7 @@
         }
       },
       "properties": {
+        "additionalProperties": false,
         "active_directory_ds": {
           "type": "object",
           "properties": {
