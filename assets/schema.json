@@ -16,6 +16,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -59,6 +60,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "retry_on_failure": {
               "type": "object",
@@ -183,6 +185,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -318,6 +321,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -422,6 +426,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -524,6 +529,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "cluster_uri": {
               "type": "string",
@@ -584,6 +590,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -612,6 +619,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -630,6 +638,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "dsn": {
               "type": "string",
@@ -678,6 +687,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -776,6 +786,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -1302,6 +1313,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -1554,6 +1566,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "dataset_url": {
               "type": "string",
@@ -1694,6 +1707,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -1863,6 +1877,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -2122,6 +2137,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -2295,6 +2311,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "path": {
               "type": "string",
@@ -2325,6 +2342,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "project": {
               "type": "string",
@@ -2571,6 +2589,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -2661,6 +2680,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "project": {
               "type": "string",
@@ -2778,6 +2798,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -2976,6 +2997,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3072,6 +3094,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -3215,6 +3238,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3306,6 +3330,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -3454,6 +3479,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocol": {
               "type": "object",
@@ -3630,6 +3656,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "loglevel": {},
             "verbosity": {
@@ -3650,6 +3677,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3814,6 +3842,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3974,6 +4003,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4119,6 +4149,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4267,6 +4298,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4406,6 +4438,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -4549,6 +4582,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4700,6 +4734,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "path": {
               "type": "string",
@@ -4712,6 +4747,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4784,6 +4820,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -4962,6 +4999,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -5115,6 +5153,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -5212,6 +5251,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "dsn": {
               "type": "string",
@@ -5235,6 +5275,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -5585,6 +5626,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -5733,6 +5775,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -6042,6 +6085,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -6228,6 +6272,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -6469,6 +6514,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "region": {
               "type": "string",
@@ -6502,6 +6548,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -6652,6 +6699,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -6695,6 +6743,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "retry_on_failure": {
               "type": "object",
@@ -6819,6 +6868,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -6954,6 +7004,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -7058,6 +7109,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -7160,6 +7212,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "cluster_uri": {
               "type": "string",
@@ -7220,6 +7273,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -7248,6 +7302,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -7266,6 +7321,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "dsn": {
               "type": "string",
@@ -7314,6 +7370,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -7412,6 +7469,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -7938,6 +7996,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -8190,6 +8249,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "dataset_url": {
               "type": "string",
@@ -8330,6 +8390,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -8499,6 +8560,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -8758,6 +8820,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -8931,6 +8994,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "path": {
               "type": "string",
@@ -8961,6 +9025,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "project": {
               "type": "string",
@@ -9207,6 +9272,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -9297,6 +9363,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "project": {
               "type": "string",
@@ -9414,6 +9481,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -9612,6 +9680,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -9708,6 +9777,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -9851,6 +9921,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -9942,6 +10013,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -10090,6 +10162,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocol": {
               "type": "object",
@@ -10266,6 +10339,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "loglevel": {},
             "verbosity": {
@@ -10286,6 +10360,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10450,6 +10525,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10610,6 +10686,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10755,6 +10832,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10903,6 +10981,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11042,6 +11121,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -11185,6 +11265,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11336,6 +11417,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "path": {
               "type": "string",
@@ -11348,6 +11430,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11420,6 +11503,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -11598,6 +11682,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -11751,6 +11836,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11848,6 +11934,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "dsn": {
               "type": "string",
@@ -11871,6 +11958,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -12221,6 +12309,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12369,6 +12458,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12678,6 +12768,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12864,6 +12955,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -13105,6 +13197,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "region": {
               "type": "string",
@@ -13138,6 +13231,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -13293,6 +13387,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "key_id": {
               "type": "string",
@@ -13317,6 +13412,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13408,6 +13504,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "htpasswd": {
               "description": "Htpasswd settings."
@@ -13422,6 +13519,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "scheme": {
               "type": "string",
@@ -13445,6 +13543,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "driver": {
               "type": "string",
@@ -13461,6 +13560,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13506,6 +13606,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13604,6 +13705,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "directory": {
               "type": "string",
@@ -13623,6 +13725,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "headers": {}
           }
@@ -13632,6 +13735,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13690,6 +13794,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "refresh_interval": {
               "type": "string",
@@ -13703,6 +13808,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "ingress": {
               "type": "object",
@@ -13828,6 +13934,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "http": {},
             "grpc": {},
@@ -13857,6 +13964,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -13885,6 +13993,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "size_mib": {
               "default": 0
@@ -13899,6 +14008,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "client_id": {
               "type": "string",
@@ -13990,6 +14100,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attribute": {
               "type": "string",
@@ -14028,6 +14139,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14053,6 +14165,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "region": {
               "type": "string",
@@ -14088,6 +14201,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14103,6 +14217,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "key_id": {
               "type": "string",
@@ -14127,6 +14242,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14218,6 +14334,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "htpasswd": {
               "description": "Htpasswd settings."
@@ -14232,6 +14349,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "scheme": {
               "type": "string",
@@ -14255,6 +14373,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "driver": {
               "type": "string",
@@ -14271,6 +14390,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14316,6 +14436,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14414,6 +14535,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "directory": {
               "type": "string",
@@ -14433,6 +14555,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "headers": {}
           }
@@ -14442,6 +14565,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14500,6 +14624,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "refresh_interval": {
               "type": "string",
@@ -14513,6 +14638,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "ingress": {
               "type": "object",
@@ -14638,6 +14764,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "http": {},
             "grpc": {},
@@ -14667,6 +14794,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -14695,6 +14823,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "size_mib": {
               "default": 0
@@ -14709,6 +14838,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "client_id": {
               "type": "string",
@@ -14800,6 +14930,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attribute": {
               "type": "string",
@@ -14838,6 +14969,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14863,6 +14995,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "region": {
               "type": "string",
@@ -14898,6 +15031,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14918,6 +15052,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -14935,6 +15070,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -14957,6 +15093,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "max_staleness": {
               "type": "string",
@@ -15003,6 +15140,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "metrics_exporter": {
               "type": "object",
@@ -15017,6 +15155,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "metrics": {
               "description": "List of delta sum metrics to convert to rates"
@@ -15028,6 +15167,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "rules": {
               "description": "Set of rules for generating new metrics"
@@ -15039,6 +15179,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "error_mode": {
               "type": "string",
@@ -15116,6 +15257,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "keys": {
               "description": "GroupByKeys describes the attribute names that are going to be used for grouping.\nEmpty value is allowed, since processor in such case can compact data"
@@ -15127,6 +15269,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "num_traces": {
               "type": "integer",
@@ -15160,6 +15303,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -15235,6 +15379,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "check_interval": {
               "type": "string"
@@ -15258,6 +15403,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "transforms": {
               "description": "transform specifies a list of transforms on metrics with each transform focusing on one metric."
@@ -15269,6 +15415,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sampling_percentage": {
               "description": "SamplingPercentage is the percentage rate at which traces or logs are going to be sampled. Defaults to zero, i.e.: no sample.\nValues greater or equal 100 are treated as \"sample all traces/logs\"."
@@ -15299,6 +15446,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "description": "AttributesActions specifies the list of actions to be applied on resource attributes.\nThe set of actions are {INSERT, UPDATE, UPSERT, DELETE, HASH, EXTRACT}."
@@ -15310,6 +15458,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "detectors": {
               "description": "Detectors is an ordered list of named detectors that should be\nrun to attempt to detect resource information."
@@ -16752,6 +16901,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "default_exporters": {
               "description": "DefaultExporters contains the list of exporters to use when a more specific record can't be found in the routing table.\nOptional."
@@ -16786,6 +16936,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -16835,6 +16986,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -16870,6 +17022,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -16908,6 +17061,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "decision_wait": {
               "type": "string",
@@ -16932,6 +17086,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "error_mode": {
               "type": "string",
@@ -16951,6 +17106,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -16968,6 +17124,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "timeout": {
               "type": "string",
@@ -16990,6 +17147,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "max_staleness": {
               "type": "string",
@@ -17036,6 +17194,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "metrics_exporter": {
               "type": "object",
@@ -17050,6 +17209,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "metrics": {
               "description": "List of delta sum metrics to convert to rates"
@@ -17061,6 +17221,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "rules": {
               "description": "Set of rules for generating new metrics"
@@ -17072,6 +17233,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "error_mode": {
               "type": "string",
@@ -17149,6 +17311,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "keys": {
               "description": "GroupByKeys describes the attribute names that are going to be used for grouping.\nEmpty value is allowed, since processor in such case can compact data"
@@ -17160,6 +17323,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "num_traces": {
               "type": "integer",
@@ -17193,6 +17357,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -17268,6 +17433,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "check_interval": {
               "type": "string"
@@ -17291,6 +17457,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "transforms": {
               "description": "transform specifies a list of transforms on metrics with each transform focusing on one metric."
@@ -17302,6 +17469,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "sampling_percentage": {
               "description": "SamplingPercentage is the percentage rate at which traces or logs are going to be sampled. Defaults to zero, i.e.: no sample.\nValues greater or equal 100 are treated as \"sample all traces/logs\"."
@@ -17332,6 +17500,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "description": "AttributesActions specifies the list of actions to be applied on resource attributes.\nThe set of actions are {INSERT, UPDATE, UPSERT, DELETE, HASH, EXTRACT}."
@@ -17343,6 +17512,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "detectors": {
               "description": "Detectors is an ordered list of named detectors that should be\nrun to attempt to detect resource information."
@@ -18785,6 +18955,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "default_exporters": {
               "description": "DefaultExporters contains the list of exporters to use when a more specific record can't be found in the routing table.\nOptional."
@@ -18819,6 +18990,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -18868,6 +19040,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -18903,6 +19076,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -18941,6 +19115,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "decision_wait": {
               "type": "string",
@@ -18965,6 +19140,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "error_mode": {
               "type": "string",
@@ -18989,6 +19165,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -19213,6 +19390,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -19444,6 +19622,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -19711,6 +19890,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20583,6 +20763,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "region": {
               "type": "string",
@@ -20606,6 +20787,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20639,6 +20821,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20652,6 +20835,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -20690,6 +20874,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -20709,6 +20894,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "connection_string": {
               "type": "string",
@@ -20758,6 +20944,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "connection": {
               "type": "string",
@@ -20783,6 +20970,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20863,6 +21051,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -21357,6 +21546,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -21381,6 +21571,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -21491,6 +21682,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "rlp_gateway": {
               "type": "object",
@@ -21621,6 +21813,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -21645,6 +21838,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -21865,6 +22059,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -21898,6 +22093,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -22773,6 +22969,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -23952,6 +24149,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -24344,6 +24542,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "type": "object",
@@ -24492,6 +24691,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -24990,6 +25190,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -25003,6 +25204,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "project": {
               "type": "string",
@@ -25054,6 +25256,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25093,6 +25296,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -25590,6 +25794,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25614,6 +25819,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25674,6 +25880,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25861,6 +26068,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -25889,6 +26097,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocols": {
               "type": "object",
@@ -25915,6 +26124,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "jar_path": {
               "type": "string",
@@ -26031,6 +26241,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -26067,6 +26278,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -26921,6 +27133,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -26937,6 +27150,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -26951,6 +27165,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "brokers": {
               "description": "The list of kafka brokers (default localhost:9092)"
@@ -27072,6 +27287,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -27262,6 +27478,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -28013,6 +28230,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocols": {
               "type": "object",
@@ -28034,6 +28252,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -28191,6 +28410,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -28632,6 +28852,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -29561,6 +29782,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -30120,6 +30342,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -30281,6 +30504,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -30522,6 +30746,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -30561,6 +30786,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "datasource": {
               "type": "string",
@@ -30922,6 +31148,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocols": {
               "type": "object",
@@ -30938,6 +31165,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "include": {},
             "exclude": {},
@@ -31035,6 +31263,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -31073,6 +31302,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -31462,6 +31692,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "trim_metric_suffixes": {
               "type": "boolean",
@@ -31492,6 +31723,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -31611,6 +31843,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -31664,6 +31897,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -31782,6 +32016,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -31889,6 +32124,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -32109,6 +32345,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "watch_observers": {
               "description": "WatchObservers are the extensions to listen to endpoints from."
@@ -32127,6 +32364,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -32600,6 +32838,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -32805,6 +33044,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33420,6 +33660,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -33453,6 +33694,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -33486,6 +33728,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocols": {
               "type": "object",
@@ -33503,6 +33746,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33587,6 +33831,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34044,6 +34289,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "broker": {
               "description": "The list of solace brokers (default localhost:5671)"
@@ -34143,6 +34389,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -34218,6 +34465,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34247,6 +34495,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34541,6 +34790,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34684,6 +34934,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -34713,6 +34964,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "type": "object",
@@ -34792,6 +35044,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "type": "object",
@@ -34893,6 +35146,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "type": "object",
@@ -34989,6 +35243,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -35593,6 +35848,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -35615,6 +35871,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -35673,6 +35930,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -35709,6 +35967,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -35737,6 +35996,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -35770,6 +36030,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36010,6 +36271,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36234,6 +36496,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36465,6 +36728,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36732,6 +36996,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37604,6 +37869,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "region": {
               "type": "string",
@@ -37627,6 +37893,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37660,6 +37927,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37673,6 +37941,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -37711,6 +37980,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -37730,6 +38000,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "connection_string": {
               "type": "string",
@@ -37779,6 +38050,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "connection": {
               "type": "string",
@@ -37804,6 +38076,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37884,6 +38157,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -38378,6 +38652,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -38402,6 +38677,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -38512,6 +38788,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "rlp_gateway": {
               "type": "object",
@@ -38642,6 +38919,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -38666,6 +38944,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -38886,6 +39165,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -38919,6 +39199,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -39794,6 +40075,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -40973,6 +41255,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -41365,6 +41648,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "type": "object",
@@ -41513,6 +41797,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42011,6 +42296,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -42024,6 +42310,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "project": {
               "type": "string",
@@ -42075,6 +42362,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42114,6 +42402,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -42611,6 +42900,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42635,6 +42925,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42695,6 +42986,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42882,6 +43174,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -42910,6 +43203,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocols": {
               "type": "object",
@@ -42936,6 +43230,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "jar_path": {
               "type": "string",
@@ -43052,6 +43347,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -43088,6 +43384,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -43942,6 +44239,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -43958,6 +44256,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "auth_type": {
               "type": "string",
@@ -43972,6 +44271,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "brokers": {
               "description": "The list of kafka brokers (default localhost:9092)"
@@ -44093,6 +44393,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -44283,6 +44584,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -45034,6 +45336,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocols": {
               "type": "object",
@@ -45055,6 +45358,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -45212,6 +45516,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -45653,6 +45958,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -46582,6 +46888,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -47141,6 +47448,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -47302,6 +47610,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -47543,6 +47852,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -47582,6 +47892,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "datasource": {
               "type": "string",
@@ -47943,6 +48254,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocols": {
               "type": "object",
@@ -47959,6 +48271,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "include": {},
             "exclude": {},
@@ -48056,6 +48369,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -48094,6 +48408,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -48483,6 +48798,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "trim_metric_suffixes": {
               "type": "boolean",
@@ -48513,6 +48829,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -48632,6 +48949,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -48685,6 +49003,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -48803,6 +49122,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -48910,6 +49230,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -49130,6 +49451,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "watch_observers": {
               "description": "WatchObservers are the extensions to listen to endpoints from."
@@ -49148,6 +49470,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -49621,6 +49944,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -49826,6 +50150,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50441,6 +50766,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -50474,6 +50800,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -50507,6 +50834,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "protocols": {
               "type": "object",
@@ -50524,6 +50852,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50608,6 +50937,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -51065,6 +51395,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "broker": {
               "description": "The list of solace brokers (default localhost:5671)"
@@ -51164,6 +51495,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -51239,6 +51571,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -51268,6 +51601,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -51562,6 +51896,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -51705,6 +52040,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -51734,6 +52070,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "type": "object",
@@ -51813,6 +52150,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "type": "object",
@@ -51914,6 +52252,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "attributes": {
               "type": "object",
@@ -52010,6 +52349,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -52614,6 +52954,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -52636,6 +52977,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -52694,6 +53036,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -52730,6 +53073,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -52758,6 +53102,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "endpoint": {
               "type": "string",
@@ -52791,6 +53136,7 @@
             "object",
             "null"
           ],
+          "additionalProperties": false,
           "properties": {
             "collection_interval": {
               "type": "string",
