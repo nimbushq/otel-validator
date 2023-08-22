@@ -1,14 +1,23 @@
 {
   "name": "otel-validator",
-  "displayName": "OTEL Validator",
-  "description": "Validates Open Telemetry (OTEL) Configuration",
+  "displayName": "Open Telemetry (OTEL) Validator",
+  "description": "OTEL Configuration Autocomplete and Validation",
+  "publisher": "nimbushq",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.81.0"
   },
   "categories": [
-    "Other"
+    "Linters",
+    "Formatters"
   ],
+  "keywords": [
+    "open telemetry",
+    "otel",
+    "config validator",
+    "observability"
+  ],
+  "icon": "media/logo.png",
   "activationEvents": [
     "onLanguage:yaml"
   ],
@@ -18,8 +27,14 @@
     "url": "https://github.com/nimbushq/otel-validator.git"
   },
   "license": "Apache-2.0",
+  "pricing": "Free",
   "browser": "./dist/web/extension.js",
-  "extensionDependencies": ["redhat.vscode-yaml"],
+  "extensionDependencies": [
+    "redhat.vscode-yaml"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": { "supported": true }
+  },
   "contributes": {
     "commands": [
       {
