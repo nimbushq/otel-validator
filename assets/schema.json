@@ -61,6 +61,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config represent a configuration for the CloudWatch logs exporter.\n",
           "properties": {
             "retry_on_failure": {
               "type": "object",
@@ -186,6 +187,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for AWS EMF exporter.\n",
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -322,6 +324,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config contains the main configuration options for the awskinesis exporter\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -427,6 +430,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for AWS X-Ray exporter.\n",
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -530,6 +534,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Azure Data Explorer Exporter\n",
           "properties": {
             "cluster_uri": {
               "type": "string",
@@ -591,6 +596,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Azure Monitor\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -620,6 +626,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Carbon exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -688,6 +695,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Elastic exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -787,6 +795,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines by Coralogix.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -1314,6 +1323,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Datadog exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -1708,6 +1718,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Dynatrace exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -1878,6 +1889,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Elastic exporter.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -2138,6 +2150,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for F5 Cloud exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -2312,6 +2325,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for file exporter.\n",
           "properties": {
             "path": {
               "type": "string",
@@ -2343,6 +2357,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Google Cloud exporter.\n",
           "properties": {
             "project": {
               "type": "string",
@@ -2681,6 +2696,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Google Cloud Managed Service for Prometheus exporter.\n",
           "properties": {
             "project": {
               "type": "string",
@@ -2799,6 +2815,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the InfluxDB exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -2998,6 +3015,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Instana exporter\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3095,6 +3113,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Jaeger gRPC exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -3239,6 +3258,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Jaeger Thrift over HTTP exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3331,6 +3351,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Kafka exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -3480,6 +3501,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the exporter.\n",
           "properties": {
             "protocol": {
               "type": "object",
@@ -3678,6 +3700,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for LogicMonitor exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -3843,6 +3866,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config contains Logz.io specific configuration such as Account TracesToken, Region, etc.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4004,6 +4028,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Loki exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4150,6 +4175,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Mezmo exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4299,6 +4325,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for OpenCensus exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4748,6 +4775,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Prometheus exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -4821,6 +4849,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Remote Write exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -5000,6 +5029,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Pulsar exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -5154,6 +5184,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for SAPM exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -5252,6 +5283,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the Sentry Exporter.\n",
           "properties": {
             "dsn": {
               "type": "string",
@@ -5276,6 +5308,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for SignalFx exporter.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -5627,6 +5660,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for SkyWalking exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -5776,6 +5810,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Splunk exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -6086,6 +6121,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Sumo Logic exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -6273,6 +6309,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration options for the exporter.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -6515,6 +6552,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for TencentCloud Log Service exporter.\n",
           "properties": {
             "region": {
               "type": "string",
@@ -6549,6 +6587,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration settings for the Zipkin exporter.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -6744,6 +6783,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config represent a configuration for the CloudWatch logs exporter.\n",
           "properties": {
             "retry_on_failure": {
               "type": "object",
@@ -6869,6 +6909,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for AWS EMF exporter.\n",
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -7005,6 +7046,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config contains the main configuration options for the awskinesis exporter\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -7110,6 +7152,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for AWS X-Ray exporter.\n",
           "properties": {
             "num_workers": {
               "type": "integer",
@@ -7213,6 +7256,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Azure Data Explorer Exporter\n",
           "properties": {
             "cluster_uri": {
               "type": "string",
@@ -7274,6 +7318,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Azure Monitor\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -7303,6 +7348,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Carbon exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -7371,6 +7417,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Elastic exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -7470,6 +7517,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines by Coralogix.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -7997,6 +8045,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Datadog exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -8391,6 +8440,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Dynatrace exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -8561,6 +8611,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Elastic exporter.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -8821,6 +8872,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for F5 Cloud exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -8995,6 +9047,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for file exporter.\n",
           "properties": {
             "path": {
               "type": "string",
@@ -9026,6 +9079,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Google Cloud exporter.\n",
           "properties": {
             "project": {
               "type": "string",
@@ -9364,6 +9418,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Google Cloud Managed Service for Prometheus exporter.\n",
           "properties": {
             "project": {
               "type": "string",
@@ -9482,6 +9537,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the InfluxDB exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -9681,6 +9737,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Instana exporter\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -9778,6 +9835,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Jaeger gRPC exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -9922,6 +9980,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Jaeger Thrift over HTTP exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10014,6 +10073,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Kafka exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -10163,6 +10223,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the exporter.\n",
           "properties": {
             "protocol": {
               "type": "object",
@@ -10361,6 +10422,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for LogicMonitor exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10526,6 +10588,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config contains Logz.io specific configuration such as Account TracesToken, Region, etc.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10687,6 +10750,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Loki exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10833,6 +10897,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Mezmo exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -10982,6 +11047,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for OpenCensus exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11431,6 +11497,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Prometheus exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11504,6 +11571,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Remote Write exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -11683,6 +11751,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Pulsar exporter.\n",
           "properties": {
             "timeout": {
               "type": "string",
@@ -11837,6 +11906,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for SAPM exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -11935,6 +12005,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the Sentry Exporter.\n",
           "properties": {
             "dsn": {
               "type": "string",
@@ -11959,6 +12030,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for SignalFx exporter.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -12310,6 +12382,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for SkyWalking exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12459,6 +12532,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Splunk exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12769,6 +12843,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Sumo Logic exporter.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -12956,6 +13031,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration options for the exporter.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -13198,6 +13274,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for TencentCloud Log Service exporter.\n",
           "properties": {
             "region": {
               "type": "string",
@@ -13232,6 +13309,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration settings for the Zipkin exporter.\n",
           "properties": {
             "sending_queue": {
               "type": "object",
@@ -13413,6 +13491,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for an AWS X-Ray proxy.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13520,6 +13599,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config specifies how the Per-RPC bearer token based authentication data should be obtained.\n",
           "properties": {
             "scheme": {
               "type": "string",
@@ -13544,6 +13624,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for dbstorage extension.\n",
           "properties": {
             "driver": {
               "type": "string",
@@ -13561,6 +13642,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for docker observer\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13706,6 +13788,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for file storage extension.\n",
           "properties": {
             "directory": {
               "type": "string",
@@ -13736,6 +13819,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration for the extension enabling the health check\nextension, used to report the health status of the service.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -13795,6 +13879,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for host observer.\n",
           "properties": {
             "refresh_interval": {
               "type": "string",
@@ -13809,6 +13894,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for http forwarder extension.\n",
           "properties": {
             "ingress": {
               "type": "object",
@@ -13935,6 +14021,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration for the extension enabling the health check\nextension, used to report the health status of the service.\n",
           "properties": {
             "http": {},
             "grpc": {},
@@ -13965,6 +14052,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for k8s attributes processor.\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -14009,6 +14097,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config stores the configuration for OAuth2 Client Credentials (2-legged OAuth2 flow) setup.\n",
           "properties": {
             "client_id": {
               "type": "string",
@@ -14101,6 +14190,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration for the OIDC Authenticator extension.\n",
           "properties": {
             "attribute": {
               "type": "string",
@@ -14140,6 +14230,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration for the extension enabling the golang\nnet/http/pprof (Performance Profiler) extension.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14166,6 +14257,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config stores the configuration for the Sigv4 Authenticator\n",
           "properties": {
             "region": {
               "type": "string",
@@ -14243,6 +14335,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for an AWS X-Ray proxy.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14350,6 +14443,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config specifies how the Per-RPC bearer token based authentication data should be obtained.\n",
           "properties": {
             "scheme": {
               "type": "string",
@@ -14374,6 +14468,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for dbstorage extension.\n",
           "properties": {
             "driver": {
               "type": "string",
@@ -14391,6 +14486,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for docker observer\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14536,6 +14632,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for file storage extension.\n",
           "properties": {
             "directory": {
               "type": "string",
@@ -14566,6 +14663,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration for the extension enabling the health check\nextension, used to report the health status of the service.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14625,6 +14723,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for host observer.\n",
           "properties": {
             "refresh_interval": {
               "type": "string",
@@ -14639,6 +14738,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for http forwarder extension.\n",
           "properties": {
             "ingress": {
               "type": "object",
@@ -14765,6 +14865,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration for the extension enabling the health check\nextension, used to report the health status of the service.\n",
           "properties": {
             "http": {},
             "grpc": {},
@@ -14795,6 +14896,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for k8s attributes processor.\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -14839,6 +14941,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config stores the configuration for OAuth2 Client Credentials (2-legged OAuth2 flow) setup.\n",
           "properties": {
             "client_id": {
               "type": "string",
@@ -14931,6 +15034,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration for the OIDC Authenticator extension.\n",
           "properties": {
             "attribute": {
               "type": "string",
@@ -14970,6 +15074,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration for the extension enabling the golang\nnet/http/pprof (Performance Profiler) extension.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -14996,6 +15101,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config stores the configuration for the Sigv4 Authenticator\n",
           "properties": {
             "region": {
               "type": "string",
@@ -15053,6 +15159,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config specifies the set of attributes to be inserted, updated, upserted and\ndeleted and the properties to include/exclude a span from being processed.\nThis processor handles all forms of modifications to attributes within a span, log, or metric.\nPrior to any actions being applied, each span is compared against\nthe include properties and then the exclude properties if they are specified.\nThis determines if a span is to be processed or not.\nThe list of actions is applied in order specified in the configuration.\n",
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -15094,6 +15201,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the processor.\n",
           "properties": {
             "max_staleness": {
               "type": "string",
@@ -15141,6 +15249,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration options for datadogprocessor.\n",
           "properties": {
             "metrics_exporter": {
               "type": "object",
@@ -15156,6 +15265,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the processor.\n",
           "properties": {
             "metrics": {
               "description": "List of delta sum metrics to convert to rates"
@@ -15168,6 +15278,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the processor.\n",
           "properties": {
             "rules": {
               "description": "Set of rules for generating new metrics"
@@ -15180,6 +15291,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Resource processor.\n",
           "properties": {
             "error_mode": {
               "type": "string",
@@ -15258,6 +15370,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the processor.\n",
           "properties": {
             "keys": {
               "description": "GroupByKeys describes the attribute names that are going to be used for grouping.\nEmpty value is allowed, since processor in such case can compact data"
@@ -15270,6 +15383,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the processor.\n",
           "properties": {
             "num_traces": {
               "type": "integer",
@@ -15304,6 +15418,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for k8s attributes processor.\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -15404,6 +15519,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Resource processor.\n",
           "properties": {
             "transforms": {
               "description": "transform specifies a list of transforms on metrics with each transform focusing on one metric."
@@ -15416,6 +15532,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration guiding the sampler processor.\n",
           "properties": {
             "sampling_percentage": {
               "description": "SamplingPercentage is the percentage rate at which traces or logs are going to be sampled. Defaults to zero, i.e.: no sample.\nValues greater or equal 100 are treated as \"sample all traces/logs\"."
@@ -15447,6 +15564,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Resource processor.\n",
           "properties": {
             "attributes": {
               "description": "AttributesActions specifies the list of actions to be applied on resource attributes.\nThe set of actions are {INSERT, UPDATE, UPSERT, DELETE, HASH, EXTRACT}."
@@ -15459,6 +15577,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Resource processor.\n",
           "properties": {
             "detectors": {
               "description": "Detectors is an ordered list of named detectors that should be\nrun to attempt to detect resource information."
@@ -16902,6 +17021,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Routing processor.\n",
           "properties": {
             "default_exporters": {
               "description": "DefaultExporters contains the list of exporters to use when a more specific record can't be found in the routing table.\nOptional."
@@ -16937,6 +17057,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration options for servicegraphprocessor.\n",
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -16987,6 +17108,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the span processor.\nPrior to any actions being applied, each span is compared against\nthe include properties and then the exclude properties if they are specified.\nThis determines if a span is to be processed or not.\n",
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -17023,6 +17145,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration options for spanmetricsprocessor.\n",
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -17062,6 +17185,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config holds the configuration for tail-based sampling.\n",
           "properties": {
             "decision_wait": {
               "type": "string",
@@ -17087,6 +17211,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the processor.\n",
           "properties": {
             "error_mode": {
               "type": "string",
@@ -17107,6 +17232,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config specifies the set of attributes to be inserted, updated, upserted and\ndeleted and the properties to include/exclude a span from being processed.\nThis processor handles all forms of modifications to attributes within a span, log, or metric.\nPrior to any actions being applied, each span is compared against\nthe include properties and then the exclude properties if they are specified.\nThis determines if a span is to be processed or not.\nThe list of actions is applied in order specified in the configuration.\n",
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -17148,6 +17274,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the processor.\n",
           "properties": {
             "max_staleness": {
               "type": "string",
@@ -17195,6 +17322,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration options for datadogprocessor.\n",
           "properties": {
             "metrics_exporter": {
               "type": "object",
@@ -17210,6 +17338,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the processor.\n",
           "properties": {
             "metrics": {
               "description": "List of delta sum metrics to convert to rates"
@@ -17222,6 +17351,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the processor.\n",
           "properties": {
             "rules": {
               "description": "Set of rules for generating new metrics"
@@ -17234,6 +17364,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Resource processor.\n",
           "properties": {
             "error_mode": {
               "type": "string",
@@ -17312,6 +17443,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the processor.\n",
           "properties": {
             "keys": {
               "description": "GroupByKeys describes the attribute names that are going to be used for grouping.\nEmpty value is allowed, since processor in such case can compact data"
@@ -17324,6 +17456,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the processor.\n",
           "properties": {
             "num_traces": {
               "type": "integer",
@@ -17358,6 +17491,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for k8s attributes processor.\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -17458,6 +17592,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Resource processor.\n",
           "properties": {
             "transforms": {
               "description": "transform specifies a list of transforms on metrics with each transform focusing on one metric."
@@ -17470,6 +17605,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config has the configuration guiding the sampler processor.\n",
           "properties": {
             "sampling_percentage": {
               "description": "SamplingPercentage is the percentage rate at which traces or logs are going to be sampled. Defaults to zero, i.e.: no sample.\nValues greater or equal 100 are treated as \"sample all traces/logs\"."
@@ -17501,6 +17637,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Resource processor.\n",
           "properties": {
             "attributes": {
               "description": "AttributesActions specifies the list of actions to be applied on resource attributes.\nThe set of actions are {INSERT, UPDATE, UPSERT, DELETE, HASH, EXTRACT}."
@@ -17513,6 +17650,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Resource processor.\n",
           "properties": {
             "detectors": {
               "description": "Detectors is an ordered list of named detectors that should be\nrun to attempt to detect resource information."
@@ -18956,6 +19094,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Routing processor.\n",
           "properties": {
             "default_exporters": {
               "description": "DefaultExporters contains the list of exporters to use when a more specific record can't be found in the routing table.\nOptional."
@@ -18991,6 +19130,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration options for servicegraphprocessor.\n",
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -19041,6 +19181,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the span processor.\nPrior to any actions being applied, each span is compared against\nthe include properties and then the exclude properties if they are specified.\nThis determines if a span is to be processed or not.\n",
           "properties": {
             "include": {
               "description": "Include specifies the set of input data properties that must be present in order\nfor this processor to apply to it.\nNote: If `exclude` is specified, the input data is compared against those\nproperties after the `include` properties.\nThis is an optional field. If neither `include` and `exclude` are set, all input data\nare processed. If `include` is set and `exclude` isn't set, then all\ninput data matching the properties in this structure are processed."
@@ -19077,6 +19218,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration options for spanmetricsprocessor.\n",
           "properties": {
             "metrics_exporter": {
               "type": "string",
@@ -19116,6 +19258,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config holds the configuration for tail-based sampling.\n",
           "properties": {
             "decision_wait": {
               "type": "string",
@@ -19141,6 +19284,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the processor.\n",
           "properties": {
             "error_mode": {
               "type": "string",
@@ -19166,6 +19310,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for active_directory_ds metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -19391,6 +19536,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the receiver configuration\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -19623,6 +19769,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for apache metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -19891,6 +20038,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20764,6 +20912,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the overall config structure for the awscloudwatchreceiver\n",
           "properties": {
             "region": {
               "type": "string",
@@ -20788,6 +20937,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for aws ecs container metrics receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20822,6 +20972,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for aws ecs container metrics receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -20875,6 +21026,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configurations for an AWS X-Ray receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -20971,6 +21123,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -21052,6 +21205,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -21547,6 +21701,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Carbon receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -21572,6 +21727,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for chrony metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -21683,6 +21839,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Collectd receiver.\n",
           "properties": {
             "rlp_gateway": {
               "type": "object",
@@ -21814,6 +21971,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Collectd receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -21839,6 +21997,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -22094,6 +22253,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for docker_stats metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -22970,6 +23130,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the elasticsearch receiver\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -24150,6 +24311,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for expvar metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -24543,6 +24705,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "FileLogConfig defines configuration for the filelog receiver\n",
           "properties": {
             "attributes": {
               "type": "object",
@@ -24692,6 +24855,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25191,6 +25355,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the fluentforward receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -25297,6 +25462,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for haproxy metrics builder.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -25795,6 +25961,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for HostMetrics receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25820,6 +25987,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -25881,6 +26049,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for simple prometheus receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -26069,6 +26238,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the InfluxDB receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -26098,6 +26268,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Jaeger receiver.\n",
           "properties": {
             "protocols": {
               "type": "object",
@@ -26242,6 +26413,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "JournaldConfig defines configuration for the journald receiver\n",
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -26279,6 +26451,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for kubernetes cluster receiver.\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -27134,6 +27307,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for kubernetes events receiver.\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -27151,6 +27325,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "APIConfig contains options relevant to connecting to the K8s API\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -27166,6 +27341,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Kafka receiver.\n",
           "properties": {
             "brokers": {
               "description": "The list of kafka brokers (default localhost:9092)"
@@ -27288,6 +27464,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config represents user settings for kafkametrics receiver\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -27479,6 +27656,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "ClientConfig for a kubelet client for talking to a kubelet HTTP endpoint.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -28231,6 +28409,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the lokireceiver receiver.\n",
           "properties": {
             "protocols": {
               "type": "object",
@@ -28253,6 +28432,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for memcached metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -28411,6 +28591,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for mongodb metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -28853,6 +29034,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for mongodbatlas metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -29783,6 +29965,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for mysql metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -30343,6 +30526,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for nginx metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -30505,6 +30689,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the NSX receiver\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -30747,6 +30932,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for OpenCensus receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -30787,6 +30973,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for oracledb metrics builder.\n",
           "properties": {
             "datasource": {
               "type": "string",
@@ -31166,6 +31353,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration of a file input operator\n",
           "properties": {
             "include": {},
             "exclude": {},
@@ -31303,6 +31491,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for postgresql metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -31693,6 +31882,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Prometheus receiver.\n",
           "properties": {
             "trim_metric_suffixes": {
               "type": "boolean",
@@ -31724,6 +31914,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for simple prometheus receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -31898,6 +32089,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config relating to Array Metric Scraper.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -32017,6 +32209,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config relating to Array Metric Scraper.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -32125,6 +32318,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -32346,6 +32540,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for receiver_creator.\n",
           "properties": {
             "watch_observers": {
               "description": "WatchObservers are the extensions to listen to endpoints from."
@@ -32365,6 +32560,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for redis metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -32839,6 +33035,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33045,6 +33242,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for saphana metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33661,6 +33859,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for SAPM receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -33695,6 +33894,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the SignalFx receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -33729,6 +33929,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for skywalking receiver.\n",
           "properties": {
             "protocols": {
               "type": "object",
@@ -33747,6 +33948,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -33832,6 +34034,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for snowflake metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34290,6 +34493,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Solace receiver.\n",
           "properties": {
             "broker": {
               "description": "The list of solace brokers (default localhost:5671)"
@@ -34390,6 +34594,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Splunk HEC receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -34496,6 +34701,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for a sqlserver receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34791,6 +34997,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for sshcheck metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -34935,6 +35142,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for StatsD receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -34965,6 +35173,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "SysLogConfig defines configuration for the syslog receiver\n",
           "properties": {
             "attributes": {
               "type": "object",
@@ -35045,6 +35254,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "TCPLogConfig defines configuration for the tcp receiver\n",
           "properties": {
             "attributes": {
               "type": "object",
@@ -35147,6 +35357,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "UDPLogConfig defines configuration for the udp receiver\n",
           "properties": {
             "attributes": {
               "type": "object",
@@ -35244,6 +35455,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration of the receiver\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -35849,6 +36061,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Wavefront receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -35872,6 +36085,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Generic Webhook receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -35931,6 +36145,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "WindowsLogConfig defines configuration for the windowseventlog receiver\n",
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -35968,6 +36183,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for WindowsPerfCounters receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -35997,6 +36213,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Zipkin receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -36031,6 +36248,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for zookeeper metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36272,6 +36490,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for active_directory_ds metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36497,6 +36716,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the receiver configuration\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36729,6 +36949,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for apache metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -36997,6 +37218,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37870,6 +38092,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the overall config structure for the awscloudwatchreceiver\n",
           "properties": {
             "region": {
               "type": "string",
@@ -37894,6 +38117,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for aws ecs container metrics receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37928,6 +38152,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for aws ecs container metrics receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -37981,6 +38206,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configurations for an AWS X-Ray receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -38077,6 +38303,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -38158,6 +38385,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -38653,6 +38881,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Carbon receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -38678,6 +38907,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for chrony metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -38789,6 +39019,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Collectd receiver.\n",
           "properties": {
             "rlp_gateway": {
               "type": "object",
@@ -38920,6 +39151,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Collectd receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -38945,6 +39177,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -39200,6 +39433,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for docker_stats metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -40076,6 +40310,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the elasticsearch receiver\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -41256,6 +41491,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for expvar metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -41649,6 +41885,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "FileLogConfig defines configuration for the filelog receiver\n",
           "properties": {
             "attributes": {
               "type": "object",
@@ -41798,6 +42035,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42297,6 +42535,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the fluentforward receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -42403,6 +42642,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for haproxy metrics builder.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -42901,6 +43141,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for HostMetrics receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42926,6 +43167,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -42987,6 +43229,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for simple prometheus receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -43175,6 +43418,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the InfluxDB receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -43204,6 +43448,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Jaeger receiver.\n",
           "properties": {
             "protocols": {
               "type": "object",
@@ -43348,6 +43593,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "JournaldConfig defines configuration for the journald receiver\n",
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -43385,6 +43631,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for kubernetes cluster receiver.\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -44240,6 +44487,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for kubernetes events receiver.\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -44257,6 +44505,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "APIConfig contains options relevant to connecting to the K8s API\n",
           "properties": {
             "auth_type": {
               "type": "string",
@@ -44272,6 +44521,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Kafka receiver.\n",
           "properties": {
             "brokers": {
               "description": "The list of kafka brokers (default localhost:9092)"
@@ -44394,6 +44644,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config represents user settings for kafkametrics receiver\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -44585,6 +44836,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "ClientConfig for a kubelet client for talking to a kubelet HTTP endpoint.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -45337,6 +45589,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the lokireceiver receiver.\n",
           "properties": {
             "protocols": {
               "type": "object",
@@ -45359,6 +45612,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for memcached metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -45517,6 +45771,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for mongodb metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -45959,6 +46214,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for mongodbatlas metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -46889,6 +47145,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for mysql metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -47449,6 +47706,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for nginx metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -47611,6 +47869,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration for the NSX receiver\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -47853,6 +48112,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for OpenCensus receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -47893,6 +48153,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for oracledb metrics builder.\n",
           "properties": {
             "datasource": {
               "type": "string",
@@ -48272,6 +48533,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration of a file input operator\n",
           "properties": {
             "include": {},
             "exclude": {},
@@ -48409,6 +48671,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for postgresql metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -48799,6 +49062,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Prometheus receiver.\n",
           "properties": {
             "trim_metric_suffixes": {
               "type": "boolean",
@@ -48830,6 +49094,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for simple prometheus receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -49004,6 +49269,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config relating to Array Metric Scraper.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -49123,6 +49389,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config relating to Array Metric Scraper.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -49231,6 +49498,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -49452,6 +49720,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for receiver_creator.\n",
           "properties": {
             "watch_observers": {
               "description": "WatchObservers are the extensions to listen to endpoints from."
@@ -49471,6 +49740,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for redis metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -49945,6 +50215,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver agent.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50151,6 +50422,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for saphana metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50767,6 +51039,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for SAPM receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -50801,6 +51074,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the SignalFx receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -50835,6 +51109,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for skywalking receiver.\n",
           "properties": {
             "protocols": {
               "type": "object",
@@ -50853,6 +51128,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines the configuration for the various elements of the receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -50938,6 +51214,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for snowflake metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -51396,6 +51673,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Solace receiver.\n",
           "properties": {
             "broker": {
               "description": "The list of solace brokers (default localhost:5671)"
@@ -51496,6 +51774,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Splunk HEC receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -51602,6 +51881,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for a sqlserver receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -51897,6 +52177,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for sshcheck metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -52041,6 +52322,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for StatsD receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -52071,6 +52353,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "SysLogConfig defines configuration for the syslog receiver\n",
           "properties": {
             "attributes": {
               "type": "object",
@@ -52151,6 +52434,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "TCPLogConfig defines configuration for the tcp receiver\n",
           "properties": {
             "attributes": {
               "type": "object",
@@ -52253,6 +52537,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "UDPLogConfig defines configuration for the udp receiver\n",
           "properties": {
             "attributes": {
               "type": "object",
@@ -52350,6 +52635,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config is the configuration of the receiver\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -52955,6 +53241,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Wavefront receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -52978,6 +53265,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for the Generic Webhook receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -53037,6 +53325,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "WindowsLogConfig defines configuration for the windowseventlog receiver\n",
           "properties": {
             "operators": {
               "description": "Config is the configuration of an operator"
@@ -53074,6 +53363,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for WindowsPerfCounters receiver.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
@@ -53103,6 +53393,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "Config defines configuration for Zipkin receiver.\n",
           "properties": {
             "endpoint": {
               "type": "string",
@@ -53137,6 +53428,7 @@
             "null"
           ],
           "additionalProperties": false,
+          "description": "MetricsBuilderConfig is a configuration for zookeeper metrics builder.\n",
           "properties": {
             "collection_interval": {
               "type": "string",
