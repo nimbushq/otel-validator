@@ -41,6 +41,10 @@
       {
         "command": "otel-validator.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "otel-validator.showViz",
+        "title": "Show Viz"
       }
     ],
     "yamlValidation": [
