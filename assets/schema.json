@@ -651,6 +651,10 @@
               "type": "string",
               "default": "127.0.0.1"
             },
+            "port": {
+              "type": "integer",
+              "default": 9042
+            },
             "keyspace": {
               "type": "string",
               "default": "otel"
@@ -939,6 +943,10 @@
                   "type": "string",
                   "default": ""
                 },
+                "authority": {
+                  "type": "string",
+                  "default": ""
+                },
                 "auth": {}
               },
               "description": "GRPC Settings used with Domain"
@@ -1022,6 +1030,10 @@
               }
             },
             "balancer_name": {
+              "type": "string",
+              "default": ""
+            },
+            "authority": {
               "type": "string",
               "default": ""
             },
@@ -1109,6 +1121,10 @@
                   }
                 },
                 "balancer_name": {
+                  "type": "string",
+                  "default": ""
+                },
+                "authority": {
                   "type": "string",
                   "default": ""
                 },
@@ -1203,6 +1219,10 @@
                   "type": "string",
                   "default": ""
                 },
+                "authority": {
+                  "type": "string",
+                  "default": ""
+                },
                 "auth": {}
               },
               "description": "The Coralogix metrics ingress endpoint"
@@ -1290,6 +1310,10 @@
                   }
                 },
                 "balancer_name": {
+                  "type": "string",
+                  "default": ""
+                },
+                "authority": {
                   "type": "string",
                   "default": ""
                 },
@@ -2467,7 +2491,7 @@
                   "description": "MapMonitoredResource is not exposed as an option in the configuration, but\ncan be used by other exporters to extend the functionality of this\nexporter. It allows overriding the function used to map otel resource to\nmonitored resource."
                 },
                 "extrametrics": {
-                  "description": "ExtraMetrics is an extension point for exporters to add to the set\nof ResourceMetrics during a call to PushMetrics."
+                  "description": "ExtraMetrics is an extension point for exporters to modify the metrics\nbefore they are sent by the exporter."
                 },
                 "getmetricname": {
                   "description": "GetMetricName is not settable in config files, but can be used by other\nexporters which extend the functionality of this exporter. It allows\ncustomizing the naming of metrics. baseName already includes type\nsuffixes for summary metrics, but does not (yet) include the domain prefix"
@@ -2567,34 +2591,6 @@
                   "default": 1000
                 },
                 "storage": {}
-              }
-            },
-            "retry_on_failure": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "enabled": {
-                  "type": "boolean",
-                  "default": false
-                },
-                "initial_interval": {
-                  "type": "string",
-                  "default": "5s"
-                },
-                "randomization_factor": {
-                  "type": "number"
-                },
-                "multiplier": {
-                  "type": "number"
-                },
-                "max_interval": {
-                  "type": "string",
-                  "default": "30s"
-                },
-                "max_elapsed_time": {
-                  "type": "string",
-                  "default": "5m0s"
-                }
               }
             }
           }
@@ -2736,22 +2732,23 @@
                   "type": "integer",
                   "description": "GRPCPoolSize sets the size of the connection pool in the GCP client"
                 },
+                "add_metric_suffixes": {
+                  "type": "boolean",
+                  "default": true
+                },
                 "extra_metrics_config": {
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "enable_target_info": {
                       "type": "boolean",
-                      "default": true,
-                      "description": "Add `target_info` metric based on the resource. On by default."
+                      "default": true
                     },
                     "enable_scope_info": {
                       "type": "boolean",
-                      "default": true,
-                      "description": "Add `otel_scope_info` metric and `scope_name`/`scope_version` attributes to all other metrics. On by default."
+                      "default": true
                     }
-                  },
-                  "description": "ExtraMetricsConfig controls the inclusion of additional metrics."
+                  }
                 },
                 "resource_filters": {}
               }
@@ -2777,34 +2774,6 @@
                   "default": 1000
                 },
                 "storage": {}
-              }
-            },
-            "retry_on_failure": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "enabled": {
-                  "type": "boolean",
-                  "default": false
-                },
-                "initial_interval": {
-                  "type": "string",
-                  "default": "5s"
-                },
-                "randomization_factor": {
-                  "type": "number"
-                },
-                "multiplier": {
-                  "type": "number"
-                },
-                "max_interval": {
-                  "type": "string",
-                  "default": "30s"
-                },
-                "max_elapsed_time": {
-                  "type": "string",
-                  "default": "5m0s"
-                }
               }
             }
           }
@@ -2990,7 +2959,10 @@
               "description": "V1Compatibility is used to specify if the exporter should use the v1.X InfluxDB API schema."
             },
             "span_dimensions": {
-              "description": "SpanDimensions are span attributes to be used as line protocol tags.\nThese are always included as tags:\n- trace ID\n- span ID\nThe default values are strongly recommended for use with Jaeger:\n- service.name\n- span.name\nOther common attributes can be found here:\n- https://github.com/open-telemetry/opentelemetry-collector/tree/main/semconv"
+              "description": "SpanDimensions are span attributes to be used as line protocol tags.\nThese are always included as tags:\n- trace ID\n- span ID\nThe default values are strongly recommended for use with Jaeger:\n- service.name\n- span.name\nOther common attributes can be found here:\n- https://opentelemetry.io/docs/specs/semconv/"
+            },
+            "log_record_dimensions": {
+              "description": "LogRecordDimensions are log record attributes to be used as line protocol tags.\nThese are always included as tags, if available:\n- trace ID\n- span ID\nThe default values:\n- service.name\nOther common attributes can be found here:\n- https://opentelemetry.io/docs/specs/semconv/\nWhen using InfluxDB for both logs and traces, be certain that log_record_dimensions\nmatches the tracing span_dimensions value."
             },
             "metrics_schema": {
               "type": "string",
@@ -3246,6 +3218,10 @@
               }
             },
             "balancer_name": {
+              "type": "string",
+              "default": ""
+            },
+            "authority": {
               "type": "string",
               "default": ""
             },
@@ -3642,6 +3618,10 @@
                       }
                     },
                     "balancer_name": {
+                      "type": "string",
+                      "default": ""
+                    },
+                    "authority": {
                       "type": "string",
                       "default": ""
                     },
@@ -4410,6 +4390,10 @@
               "type": "string",
               "default": ""
             },
+            "authority": {
+              "type": "string",
+              "default": ""
+            },
             "auth": {},
             "sending_queue": {
               "type": "object",
@@ -4598,6 +4582,10 @@
               }
             },
             "balancer_name": {
+              "type": "string",
+              "default": ""
+            },
+            "authority": {
               "type": "string",
               "default": ""
             },
@@ -5651,6 +5639,11 @@
             "max_connections": {
               "type": "integer",
               "description": "MaxConnections is used to set a limit to the maximum idle HTTP connection the exporter can keep open.\nDeprecated: use HTTPClientSettings.MaxIdleConns or HTTPClientSettings.MaxIdleConnsPerHost instead."
+            },
+            "drop_histogram_buckets": {
+              "type": "boolean",
+              "default": false,
+              "description": "Whether to drop  histogram bucket metrics dispatched to Splunk Observability.\nDefault value is set to false."
             }
           }
         },
@@ -5742,6 +5735,10 @@
               }
             },
             "balancer_name": {
+              "type": "string",
+              "default": ""
+            },
+            "authority": {
               "type": "string",
               "default": ""
             },
@@ -7373,6 +7370,10 @@
               "type": "string",
               "default": "127.0.0.1"
             },
+            "port": {
+              "type": "integer",
+              "default": 9042
+            },
             "keyspace": {
               "type": "string",
               "default": "otel"
@@ -7661,6 +7662,10 @@
                   "type": "string",
                   "default": ""
                 },
+                "authority": {
+                  "type": "string",
+                  "default": ""
+                },
                 "auth": {}
               },
               "description": "GRPC Settings used with Domain"
@@ -7744,6 +7749,10 @@
               }
             },
             "balancer_name": {
+              "type": "string",
+              "default": ""
+            },
+            "authority": {
               "type": "string",
               "default": ""
             },
@@ -7831,6 +7840,10 @@
                   }
                 },
                 "balancer_name": {
+                  "type": "string",
+                  "default": ""
+                },
+                "authority": {
                   "type": "string",
                   "default": ""
                 },
@@ -7925,6 +7938,10 @@
                   "type": "string",
                   "default": ""
                 },
+                "authority": {
+                  "type": "string",
+                  "default": ""
+                },
                 "auth": {}
               },
               "description": "The Coralogix metrics ingress endpoint"
@@ -8012,6 +8029,10 @@
                   }
                 },
                 "balancer_name": {
+                  "type": "string",
+                  "default": ""
+                },
+                "authority": {
                   "type": "string",
                   "default": ""
                 },
@@ -9189,7 +9210,7 @@
                   "description": "MapMonitoredResource is not exposed as an option in the configuration, but\ncan be used by other exporters to extend the functionality of this\nexporter. It allows overriding the function used to map otel resource to\nmonitored resource."
                 },
                 "extrametrics": {
-                  "description": "ExtraMetrics is an extension point for exporters to add to the set\nof ResourceMetrics during a call to PushMetrics."
+                  "description": "ExtraMetrics is an extension point for exporters to modify the metrics\nbefore they are sent by the exporter."
                 },
                 "getmetricname": {
                   "description": "GetMetricName is not settable in config files, but can be used by other\nexporters which extend the functionality of this exporter. It allows\ncustomizing the naming of metrics. baseName already includes type\nsuffixes for summary metrics, but does not (yet) include the domain prefix"
@@ -9289,34 +9310,6 @@
                   "default": 1000
                 },
                 "storage": {}
-              }
-            },
-            "retry_on_failure": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "enabled": {
-                  "type": "boolean",
-                  "default": false
-                },
-                "initial_interval": {
-                  "type": "string",
-                  "default": "5s"
-                },
-                "randomization_factor": {
-                  "type": "number"
-                },
-                "multiplier": {
-                  "type": "number"
-                },
-                "max_interval": {
-                  "type": "string",
-                  "default": "30s"
-                },
-                "max_elapsed_time": {
-                  "type": "string",
-                  "default": "5m0s"
-                }
               }
             }
           }
@@ -9458,22 +9451,23 @@
                   "type": "integer",
                   "description": "GRPCPoolSize sets the size of the connection pool in the GCP client"
                 },
+                "add_metric_suffixes": {
+                  "type": "boolean",
+                  "default": true
+                },
                 "extra_metrics_config": {
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "enable_target_info": {
                       "type": "boolean",
-                      "default": true,
-                      "description": "Add `target_info` metric based on the resource. On by default."
+                      "default": true
                     },
                     "enable_scope_info": {
                       "type": "boolean",
-                      "default": true,
-                      "description": "Add `otel_scope_info` metric and `scope_name`/`scope_version` attributes to all other metrics. On by default."
+                      "default": true
                     }
-                  },
-                  "description": "ExtraMetricsConfig controls the inclusion of additional metrics."
+                  }
                 },
                 "resource_filters": {}
               }
@@ -9499,34 +9493,6 @@
                   "default": 1000
                 },
                 "storage": {}
-              }
-            },
-            "retry_on_failure": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "enabled": {
-                  "type": "boolean",
-                  "default": false
-                },
-                "initial_interval": {
-                  "type": "string",
-                  "default": "5s"
-                },
-                "randomization_factor": {
-                  "type": "number"
-                },
-                "multiplier": {
-                  "type": "number"
-                },
-                "max_interval": {
-                  "type": "string",
-                  "default": "30s"
-                },
-                "max_elapsed_time": {
-                  "type": "string",
-                  "default": "5m0s"
-                }
               }
             }
           }
@@ -9712,7 +9678,10 @@
               "description": "V1Compatibility is used to specify if the exporter should use the v1.X InfluxDB API schema."
             },
             "span_dimensions": {
-              "description": "SpanDimensions are span attributes to be used as line protocol tags.\nThese are always included as tags:\n- trace ID\n- span ID\nThe default values are strongly recommended for use with Jaeger:\n- service.name\n- span.name\nOther common attributes can be found here:\n- https://github.com/open-telemetry/opentelemetry-collector/tree/main/semconv"
+              "description": "SpanDimensions are span attributes to be used as line protocol tags.\nThese are always included as tags:\n- trace ID\n- span ID\nThe default values are strongly recommended for use with Jaeger:\n- service.name\n- span.name\nOther common attributes can be found here:\n- https://opentelemetry.io/docs/specs/semconv/"
+            },
+            "log_record_dimensions": {
+              "description": "LogRecordDimensions are log record attributes to be used as line protocol tags.\nThese are always included as tags, if available:\n- trace ID\n- span ID\nThe default values:\n- service.name\nOther common attributes can be found here:\n- https://opentelemetry.io/docs/specs/semconv/\nWhen using InfluxDB for both logs and traces, be certain that log_record_dimensions\nmatches the tracing span_dimensions value."
             },
             "metrics_schema": {
               "type": "string",
@@ -9968,6 +9937,10 @@
               }
             },
             "balancer_name": {
+              "type": "string",
+              "default": ""
+            },
+            "authority": {
               "type": "string",
               "default": ""
             },
@@ -10364,6 +10337,10 @@
                       }
                     },
                     "balancer_name": {
+                      "type": "string",
+                      "default": ""
+                    },
+                    "authority": {
                       "type": "string",
                       "default": ""
                     },
@@ -11132,6 +11109,10 @@
               "type": "string",
               "default": ""
             },
+            "authority": {
+              "type": "string",
+              "default": ""
+            },
             "auth": {},
             "sending_queue": {
               "type": "object",
@@ -11320,6 +11301,10 @@
               }
             },
             "balancer_name": {
+              "type": "string",
+              "default": ""
+            },
+            "authority": {
               "type": "string",
               "default": ""
             },
@@ -12373,6 +12358,11 @@
             "max_connections": {
               "type": "integer",
               "description": "MaxConnections is used to set a limit to the maximum idle HTTP connection the exporter can keep open.\nDeprecated: use HTTPClientSettings.MaxIdleConns or HTTPClientSettings.MaxIdleConnsPerHost instead."
+            },
+            "drop_histogram_buckets": {
+              "type": "boolean",
+              "default": false,
+              "description": "Whether to drop  histogram bucket metrics dispatched to Splunk Observability.\nDefault value is set to false."
             }
           }
         },
@@ -12464,6 +12454,10 @@
               }
             },
             "balancer_name": {
+              "type": "string",
+              "default": ""
+            },
+            "authority": {
               "type": "string",
               "default": ""
             },
@@ -22265,8 +22259,7 @@
             },
             "timeout": {
               "type": "string",
-              "default": "5s",
-              "description": "The maximum amount of time to wait for docker API responses.  Default is 5s"
+              "default": "5s"
             },
             "endpoint": {
               "type": "string",
@@ -26794,6 +26787,17 @@
                   },
                   "description": "MetricConfig provides common config for a particular metric."
                 },
+                "k8s.pod.status_reason": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "description": "MetricConfig provides common config for a particular metric."
+                },
                 "k8s.replicaset.available": {
                   "type": "object",
                   "additionalProperties": false,
@@ -28444,8 +28448,7 @@
             },
             "timeout": {
               "type": "string",
-              "default": "10s",
-              "description": "Timeout for the memcache stats request"
+              "default": "10s"
             },
             "endpoint": {
               "type": "string",
@@ -31463,8 +31466,7 @@
             },
             "timeout": {
               "type": "string",
-              "default": "5s",
-              "description": "The maximum amount of time to wait for Podman API responses.  Default is 5s"
+              "default": "5s"
             },
             "endpoint": {
               "type": "string",
@@ -31688,6 +31690,17 @@
                   },
                   "description": "MetricConfig provides common config for a particular metric."
                 },
+                "postgresql.database.locks": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "description": "MetricConfig provides common config for a particular metric."
+                },
                 "postgresql.db_size": {
                   "type": "object",
                   "additionalProperties": false,
@@ -31776,6 +31789,17 @@
                   },
                   "description": "MetricConfig provides common config for a particular metric."
                 },
+                "postgresql.sequential_scans": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "description": "MetricConfig provides common config for a particular metric."
+                },
                 "postgresql.table.count": {
                   "type": "object",
                   "additionalProperties": false,
@@ -31805,6 +31829,17 @@
                     "enabled": {
                       "type": "boolean",
                       "default": true
+                    }
+                  },
+                  "description": "MetricConfig provides common config for a particular metric."
+                },
+                "postgresql.temp_files": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false
                     }
                   },
                   "description": "MetricConfig provides common config for a particular metric."
@@ -32581,10 +32616,15 @@
               "type": "string",
               "default": "tcp"
             },
+            "username": {
+              "type": "string",
+              "default": "",
+              "description": "Optional username. Use the specified Username to authenticate the current connection\nwith one of the connections defined in the ACL list when connecting\nto a Redis 6.0 instance, or greater, that is using the Redis ACL system."
+            },
             "password": {
               "type": "string",
               "default": "",
-              "description": "Optional password. Must match the password specified in the\nrequirepass server configuration option."
+              "description": "Optional password. Must match the password specified in the\nrequirepass server configuration option, or the user's password when connecting\nto a Redis 6.0 instance, or greater, that is using the Redis ACL system."
             },
             "tls": {
               "type": "object",
@@ -33958,7 +33998,8 @@
               "type": "string"
             },
             "timeout": {
-              "type": "string"
+              "type": "string",
+              "default": "5s"
             },
             "endpoint": {
               "type": "string",
@@ -36260,8 +36301,7 @@
             },
             "timeout": {
               "type": "string",
-              "default": "10s",
-              "description": "Timeout within which requests should be completed."
+              "default": "10s"
             },
             "endpoint": {
               "type": "string",
@@ -39445,8 +39485,7 @@
             },
             "timeout": {
               "type": "string",
-              "default": "5s",
-              "description": "The maximum amount of time to wait for docker API responses.  Default is 5s"
+              "default": "5s"
             },
             "endpoint": {
               "type": "string",
@@ -43974,6 +44013,17 @@
                   },
                   "description": "MetricConfig provides common config for a particular metric."
                 },
+                "k8s.pod.status_reason": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "description": "MetricConfig provides common config for a particular metric."
+                },
                 "k8s.replicaset.available": {
                   "type": "object",
                   "additionalProperties": false,
@@ -45624,8 +45674,7 @@
             },
             "timeout": {
               "type": "string",
-              "default": "10s",
-              "description": "Timeout for the memcache stats request"
+              "default": "10s"
             },
             "endpoint": {
               "type": "string",
@@ -48643,8 +48692,7 @@
             },
             "timeout": {
               "type": "string",
-              "default": "5s",
-              "description": "The maximum amount of time to wait for Podman API responses.  Default is 5s"
+              "default": "5s"
             },
             "endpoint": {
               "type": "string",
@@ -48868,6 +48916,17 @@
                   },
                   "description": "MetricConfig provides common config for a particular metric."
                 },
+                "postgresql.database.locks": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "description": "MetricConfig provides common config for a particular metric."
+                },
                 "postgresql.db_size": {
                   "type": "object",
                   "additionalProperties": false,
@@ -48956,6 +49015,17 @@
                   },
                   "description": "MetricConfig provides common config for a particular metric."
                 },
+                "postgresql.sequential_scans": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "description": "MetricConfig provides common config for a particular metric."
+                },
                 "postgresql.table.count": {
                   "type": "object",
                   "additionalProperties": false,
@@ -48985,6 +49055,17 @@
                     "enabled": {
                       "type": "boolean",
                       "default": true
+                    }
+                  },
+                  "description": "MetricConfig provides common config for a particular metric."
+                },
+                "postgresql.temp_files": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false
                     }
                   },
                   "description": "MetricConfig provides common config for a particular metric."
@@ -49761,10 +49842,15 @@
               "type": "string",
               "default": "tcp"
             },
+            "username": {
+              "type": "string",
+              "default": "",
+              "description": "Optional username. Use the specified Username to authenticate the current connection\nwith one of the connections defined in the ACL list when connecting\nto a Redis 6.0 instance, or greater, that is using the Redis ACL system."
+            },
             "password": {
               "type": "string",
               "default": "",
-              "description": "Optional password. Must match the password specified in the\nrequirepass server configuration option."
+              "description": "Optional password. Must match the password specified in the\nrequirepass server configuration option, or the user's password when connecting\nto a Redis 6.0 instance, or greater, that is using the Redis ACL system."
             },
             "tls": {
               "type": "object",
@@ -51138,7 +51224,8 @@
               "type": "string"
             },
             "timeout": {
-              "type": "string"
+              "type": "string",
+              "default": "5s"
             },
             "endpoint": {
               "type": "string",
@@ -53440,8 +53527,7 @@
             },
             "timeout": {
               "type": "string",
-              "default": "10s",
-              "description": "Timeout within which requests should be completed."
+              "default": "10s"
             },
             "endpoint": {
               "type": "string",
