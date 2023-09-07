@@ -1,3 +1,5 @@
+receivers:
+  otlp:
 
 exporters:
   prometheus:
@@ -9,7 +11,6 @@ exporters:
     add_metric_suffixes: true
 
   logging:
-    verbosity: sda
 
   zipkin:
     endpoint: "http://zipkin-all-in-one:9411/api/v2/spans"
