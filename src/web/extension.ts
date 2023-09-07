@@ -40,8 +40,8 @@ export function activate(context: vscode.ExtensionContext) {
 				}
 			);
 			// TODO: don't hardcode
-			let jsPath = vscode.Uri.joinPath(context.extensionUri, "dist", "assets", "index-8481c42a.js");
-			let cssPath = vscode.Uri.joinPath(context.extensionUri, "dist", "assets", "index-ad29ad78.css");
+			let jsPath = vscode.Uri.joinPath(context.extensionUri, "dist", "assets", "index-f79125d9.js");
+			let cssPath = vscode.Uri.joinPath(context.extensionUri, "dist", "assets", "index-58500439.css");
 			jsPath = currentPanel.webview.asWebviewUri(jsPath);
 			cssPath = currentPanel.webview.asWebviewUri(cssPath);
 			currentPanel.webview.html = getWebviewContent({ cssPath, jsPath });
