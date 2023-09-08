@@ -3,7 +3,7 @@
   "displayName": "Open Telemetry (OTEL) Validator",
   "description": "OTEL Configuration Autocomplete and Validation",
   "publisher": "nimbushq",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.81.0"
   },
