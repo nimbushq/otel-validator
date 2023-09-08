@@ -9,6 +9,6 @@ All notable changes to the "otel-validator" extension will be documented in this
 * update schema to support otel-collector-contrib v0.84.0 
 * experimental `Show Viz` command to show visualization of your OTEL pipelines
 
-### Bug Fixes
+## 0.0.1 (2023-08-22)
 
-* disable additional properties for components ([965fbf3](https://github.com/nimbushq/otel-validator/commit/965fbf32b8e2987be199e86d256897b615349e96))
+Initial release
