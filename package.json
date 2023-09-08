@@ -39,12 +39,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "otel-validator.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "otel-validator.showViz",
-        "title": "Show Viz"
+        "title": "OTEL Validator: Show Viz"
       }
     ],
     "yamlValidation": [

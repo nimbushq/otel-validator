@@ -22,10 +22,6 @@ export function activate(context: vscode.ExtensionContext) {
 	Logger.configure(context, "info");
 
 	// --- init/commands
-	let disposable = vscode.commands.registerCommand('otel-validator.helloWorld', () => {
-		vscode.window.showInformationMessage('Hello World from otel-validator in a web extension host!');
-	});
-
 	context.subscriptions.push(vscode.commands.registerCommand('otel-validator.showViz', () => {
 		if (currentPanel) {
 			currentPanel.reveal(vscode.ViewColumn.One);
