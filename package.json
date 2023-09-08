@@ -3,7 +3,7 @@
   "displayName": "Open Telemetry (OTEL) Validator",
   "description": "OTEL Configuration Autocomplete and Validation",
   "publisher": "nimbushq",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -34,7 +34,9 @@
     "redhat.vscode-yaml"
   ],
   "capabilities": {
-    "untrustedWorkspaces": { "supported": true }
+    "untrustedWorkspaces": {
+      "supported": true
+    }
   },
   "contributes": {
     "commands": [
