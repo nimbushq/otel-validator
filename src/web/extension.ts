@@ -67,7 +67,6 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	}));
 
-	context.subscriptions.push(disposable);
 	Logger.log({ctx: "activate", msg: "activated"}, "info");
 }
 
